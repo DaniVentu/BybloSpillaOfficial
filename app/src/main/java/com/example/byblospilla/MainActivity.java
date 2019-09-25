@@ -24,4 +24,5 @@ public class MainActivity extends AppCompatActivity {
     /*qui posso scrivere gli altri metodi fuori dal metodo principale!*/
 
 
+
 }
