@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BybloSpilla</string>
+    <string name="app_name2">Byblos</string>
+    <string name="name">Nome</string>
+    <string name="surname">Cognome</string>
+    <string name="age">Età</string>
+    <string name="city">Città</string>
+    <string name="EmailAddress">E-mail</string>
+    <string name="MobileNumber">Telefono</string>
+    <string name="Password">Password</string>
+    <string name="Login">Login</string>
+    <string name="Registration">Registrati</string>
+    <string name="Info">Chi Siamo?</string>
+    <string name="prova">Benvenuto nella app Byblos</string>
+
+</resources>
