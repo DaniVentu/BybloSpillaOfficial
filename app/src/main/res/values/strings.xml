@@ -13,5 +13,11 @@
     <string name="Info">Chi Siamo?</string>
     <string name="prova">Benvenuto nella app Byblos</string>
     <string name="access">Entra in Byblos</string>
+    <string name="time">Orario Settimanale</string>
+    <string name="avvisi">Avvisi</string>
+    <string name="settings">Impostazioni</string>
+    <string name="rooms">Aule</string>
+    <string name="calendar">Calendario</string>
+    <string name="credits">Crediti</string>
 
 </resources>
