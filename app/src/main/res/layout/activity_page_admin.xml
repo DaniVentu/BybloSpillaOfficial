@@ -19,6 +19,7 @@
         android:autoLink="none"
         android:bufferType="editable"
         android:ems="10"
+        android:hint="@string/Password"
         android:inputType="numberPassword"
         android:scrollbarThumbHorizontal="@color/colorPrimary"
         android:scrollbarThumbVertical="@color/colorPrimary"

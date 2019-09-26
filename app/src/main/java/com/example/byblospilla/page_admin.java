@@ -15,7 +15,7 @@ public class page_admin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page_admin);
 
-        Button btnadmin = findViewById(R.id.pwadmin);
+        final Button btnadmin = findViewById(R.id.pwadmin);
         final Intent openmenu = new Intent(page_admin.this, Page1.class);
         btnadmin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,8 +26,9 @@ public class page_admin extends AppCompatActivity {
                 if (Spw.equals(pw)) {
                     startActivity(openmenu);
                 }
-                else
-                    ;
+                else {
+                    recuperapw.setError("please enter valid code!");
+                }
             }
 
         });
