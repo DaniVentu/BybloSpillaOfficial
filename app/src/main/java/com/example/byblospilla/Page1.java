@@ -14,6 +14,7 @@ public class Page1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page1);
 
+        /* Creo il collegamento alla pagina instagram "aulastudibyblos" */
         TextView instagram = (TextView) findViewById(R.id.ig);
         instagram.setMovementMethod(LinkMovementMethod.getInstance());
 
