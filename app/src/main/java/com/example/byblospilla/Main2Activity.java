@@ -22,5 +22,14 @@ public class Main2Activity extends AppCompatActivity {
                 startActivity(openpage1);
             }
         });
+
+        Button btn2page1 = findViewById(R.id.loginadmin);
+        final Intent open2page1 = new Intent(Main2Activity.this, page_admin.class);
+        btnpage1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(open2page1);
+            }
+        });
     }
 }

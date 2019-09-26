@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/b_logo1_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".page_admin"></activity>
         <activity android:name=".Page1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
