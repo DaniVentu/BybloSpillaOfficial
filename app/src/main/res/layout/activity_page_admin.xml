@@ -19,7 +19,7 @@
         android:autoLink="none"
         android:bufferType="editable"
         android:ems="10"
-        android:hint="@string/Password"
+        android:hint="@string/Code"
         android:inputType="numberPassword"
         android:scrollbarThumbHorizontal="@color/colorPrimary"
         android:scrollbarThumbVertical="@color/colorPrimary"
@@ -60,10 +60,12 @@
         android:textColor="@color/colorAccent"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        tools:text="@string/adminacces" />
+        tools:text="@string/adminacces"
+        tools:visibility="invisible" />
 
     <Button
         android:id="@+id/pwadmin"

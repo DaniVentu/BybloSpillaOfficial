@@ -23,5 +23,5 @@
     <string name="admin">Admin</string>
     <string name="adminacces">Inserisci Codice Admin</string>
     <string name="instagram"><a href="https://instagram.com/aulastudiobyblos?igshid=mp7ipsmcjxz8">aulastudiobyblos</a></string>
-
+    <string name="Code">Enter Admin Code</string>
 </resources>
