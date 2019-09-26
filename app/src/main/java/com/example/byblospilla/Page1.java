@@ -11,4 +11,6 @@ public class Page1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page1);
     }
+    
+
 }
