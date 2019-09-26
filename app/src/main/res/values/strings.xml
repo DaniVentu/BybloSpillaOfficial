@@ -19,5 +19,8 @@
     <string name="rooms">Aule</string>
     <string name="calendar">Calendario</string>
     <string name="credits">Crediti</string>
+    <string name="guest">Guest</string>
+    <string name="admin">Admin</string>
+
 
 </resources>
