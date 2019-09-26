@@ -8,7 +8,7 @@
     tools:context=".page_admin">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/numericpw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -16,12 +16,19 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="100dp"
         android:layout_marginRight="100dp"
+        android:autoLink="none"
+        android:bufferType="editable"
         android:ems="10"
         android:inputType="numberPassword"
-        android:text="@string/Password"
+        android:scrollbarThumbHorizontal="@color/colorPrimary"
+        android:scrollbarThumbVertical="@color/colorPrimary"
+        android:scrollbarTrackHorizontal="@color/colorPrimaryDark"
+        android:scrollbarTrackVertical="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:text="@string/Password" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -58,7 +65,7 @@
         tools:text="@string/adminacces" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/pwadmin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="161dp"
@@ -71,6 +78,6 @@
         android:textColor="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/numericpw" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
