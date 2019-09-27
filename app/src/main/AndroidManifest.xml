@@ -9,23 +9,14 @@
         android:roundIcon="@mipmap/b_logo1_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Page_Settings"></activity>
+        <activity android:name=".Page_Timetable"></activity>
+        <activity android:name=".Page_Events" />
+        <activity android:name=".Page_Rooms" />
+        <activity android:name=".Page_Settings" />
         <activity android:name=".Page_Info" />
         <activity android:name=".page_admin" />
-        <activity android:name=".Page1">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Main2Activity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".Page1" />
+        <activity android:name=".Main2Activity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

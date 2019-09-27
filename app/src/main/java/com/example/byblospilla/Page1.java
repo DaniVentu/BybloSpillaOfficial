@@ -22,7 +22,6 @@ public class Page1 extends AppCompatActivity {
         instagram.setMovementMethod(LinkMovementMethod.getInstance());
 
         /*Creo collegamento al button Impostazioni*/
-        /* Accesso Admin */
         Button btnsetting = findViewById(R.id.btn_settings);
         final Intent openbtn_settings = new Intent(Page1.this, Page_Settings.class);
         btnsetting.setOnClickListener(new View.OnClickListener() {
@@ -31,6 +30,37 @@ public class Page1 extends AppCompatActivity {
                 startActivity(openbtn_settings);
             }
         });
+
+        /*creo collegamento al button aule*/
+        Button btnrooms = findViewById(R.id.btn_rooms);
+        final Intent openbtn_rooms = new Intent(Page1.this, Page_Rooms.class);
+        btnrooms.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(openbtn_rooms);
+            }
+        });
+
+        /*creo collegamento al button avvisi*/
+        Button btnevents = findViewById(R.id.btn_events);
+        final Intent openbtn_events = new Intent(Page1.this, Page_Events.class);
+        btnevents.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(openbtn_events);
+            }
+        });
+
+        /*creo collegamento al button Orario*/
+        Button btntimetable = findViewById(R.id.btn_timetable);
+        final Intent openbtn_timetable = new Intent(Page1.this, Page_Timetable.class);
+        btntimetable.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(openbtn_timetable);
+            }
+        });
+
     }
 
 

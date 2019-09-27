@@ -25,4 +25,14 @@
     <string name="instagram"><a href="https://instagram.com/aulastudiobyblos?igshid=mp7ipsmcjxz8">aulastudiobyblos</a></string>
     <string name="Code">Enter Admin Code</string>
     <string name="notify">Notifiche</string>
+    <string name="week">Settimana Corrente</string>
+    <string name="Mattime">Orario Mattino</string>
+    <string name="pomtime">Orario Pomeriggio</string>
+    <string name="day1">Lun</string>
+    <string name="day2">Mar</string>
+    <string name="day3">Mer</string>
+    <string name="day4">Gio</string>
+    <string name="day5">Ven</string>
+    <string name="day6">Sab</string>
+    <string name="day7">Dom</string>
 </resources>

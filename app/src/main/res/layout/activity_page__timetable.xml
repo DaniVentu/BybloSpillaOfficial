@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Page_Timetable">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="311dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:text="@string/time"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="245dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/currweek"
+                android:layout_width="62dp"
+                android:layout_height="35dp"
+                android:layout_column="1"
+                android:layout_gravity="start"
+                android:freezesText="false"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/week"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/lun"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:gravity="center"
+                android:text="@string/day1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mar"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:gravity="center"
+                android:text="@string/day2"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mer"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_column="4"
+                android:gravity="center"
+                android:text="@string/day3"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/gio"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_column="5"
+                android:gravity="center"
+                android:text="@string/day4"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ven"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_column="6"
+                android:gravity="center"
+                android:text="@string/day5"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sab"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_column="7"
+                android:gravity="center"
+                android:text="@string/day6"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dom"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_column="8"
+                android:gravity="center"
+                android:text="@string/day7"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+
+            <TextView
+                android:id="@+id/matt"
+                android:layout_width="62dp"
+                android:layout_height="80dp"
+                android:layout_column="1"
+                android:layout_gravity="start"
+                android:freezesText="false"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/Mattime"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <EditText
+                android:id="@+id/r2c2"
+                style="@style/Base.Widget.MaterialComponents.TextInputEditText"
+                android:layout_width="50dp"
+                android:layout_height="58dp"
+                android:layout_column="2"
+                android:gravity="center"
+                android:inputType="date"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/r2c3"
+                style="@style/Base.Widget.MaterialComponents.TextInputEditText"
+                android:layout_width="50dp"
+                android:layout_height="58dp"
+                android:layout_column="3"
+                android:gravity="center"
+                android:inputType="date"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/r2c4"
+                style="@style/Base.Widget.MaterialComponents.TextInputEditText"
+                android:layout_width="50dp"
+                android:layout_height="58dp"
+                android:layout_column="4"
+                android:gravity="center"
+                android:inputType="date"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/r2c5"
+                style="@style/Base.Widget.MaterialComponents.TextInputEditText"
+                android:layout_width="50dp"
+                android:layout_height="58dp"
+                android:layout_column="5"
+                android:gravity="center"
+                android:inputType="date"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/r2c6"
+                style="@style/Base.Widget.MaterialComponents.TextInputEditText"
+                android:layout_width="50dp"
+                android:layout_height="58dp"
+                android:layout_column="6"
+                android:gravity="center"
+                android:inputType="date"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/r2c7"
+                style="@style/Base.Widget.MaterialComponents.TextInputEditText"
+                android:layout_width="50dp"
+                android:layout_height="58dp"
+                android:layout_column="7"
+                android:gravity="center"
+                android:inputType="date"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/r2c8"
+                style="@style/Base.Widget.MaterialComponents.TextInputEditText"
+                android:layout_width="50dp"
+                android:layout_height="58dp"
+                android:layout_column="8"
+                android:gravity="center"
+                android:inputType="date"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+                </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <TextView
+                android:id="@+id/pom"
+                android:layout_width="62dp"
+                android:layout_height="80dp"
+                android:layout_column="1"
+                android:layout_gravity="start"
+                android:freezesText="false"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/pomtime"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <EditText
+                android:id="@+id/r3c2"
+                style="@style/Base.Widget.MaterialComponents.TextInputEditText"
+                android:layout_width="50dp"
+                android:layout_height="58dp"
+                android:layout_column="2"
+                android:gravity="center"
+                android:inputType="date"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/r3c3"
+                style="@style/Base.Widget.MaterialComponents.TextInputEditText"
+                android:layout_width="50dp"
+                android:layout_height="58dp"
+                android:layout_column="3"
+                android:gravity="center"
+                android:inputType="date"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/r3c4"
+                style="@style/Base.Widget.MaterialComponents.TextInputEditText"
+                android:layout_width="50dp"
+                android:layout_height="58dp"
+                android:layout_column="4"
+                android:gravity="center"
+                android:inputType="date"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/r3c5"
+                style="@style/Base.Widget.MaterialComponents.TextInputEditText"
+                android:layout_width="50dp"
+                android:layout_height="58dp"
+                android:layout_column="5"
+                android:gravity="center"
+                android:inputType="date"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/r3c6"
+                style="@style/Base.Widget.MaterialComponents.TextInputEditText"
+                android:layout_width="50dp"
+                android:layout_height="58dp"
+                android:layout_column="6"
+                android:gravity="center"
+                android:inputType="date"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/r3c7"
+                style="@style/Base.Widget.MaterialComponents.TextInputEditText"
+                android:layout_width="50dp"
+                android:layout_height="58dp"
+                android:layout_column="7"
+                android:gravity="center"
+                android:inputType="date"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/r3c8"
+                style="@style/Base.Widget.MaterialComponents.TextInputEditText"
+                android:layout_width="50dp"
+                android:layout_height="58dp"
+                android:layout_column="8"
+                android:gravity="center"
+                android:inputType="date"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        style="@android:style/Widget.DeviceDefault.CalendarView"
+        android:layout_width="364dp"
+        android:layout_height="306dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@color/colorPrimary"
+        android:focusedMonthDateColor="@color/colorAccent"
+        android:selectedWeekBackgroundColor="@color/colorPrimaryDark"
+        android:theme="@style/AppTheme"
+        android:unfocusedMonthDateColor="@color/colorPrimaryDark"
+        android:visibility="visible"
+        android:weekNumberColor="@color/colorPrimaryDark"
+        android:weekSeparatorLineColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
