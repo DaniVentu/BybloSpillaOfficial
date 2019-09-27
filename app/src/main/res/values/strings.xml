@@ -13,7 +13,7 @@
     <string name="Info">Chi Siamo?</string>
     <string name="prova">Benvenuto nella app Byblos</string>
     <string name="access">Entra in Byblos</string>
-    <string name="time">Orario Settimanale</string>
+    <string name="Timetab">Orario Settimanale</string>
     <string name="avvisi">Avvisi</string>
     <string name="settings">Impostazioni</string>
     <string name="rooms">Aule</string>
@@ -35,4 +35,5 @@
     <string name="day5">Ven</string>
     <string name="day6">Sab</string>
     <string name="day7">Dom</string>
+    <string name="orset">Orario</string>
 </resources>

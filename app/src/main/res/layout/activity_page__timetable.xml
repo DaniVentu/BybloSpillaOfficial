@@ -8,18 +8,23 @@
     tools:context=".Page_Timetable">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/orario"
         android:layout_width="311dp"
         android:layout_height="53dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="35dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
-        android:text="@string/time"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp"
+        android:bufferType="normal"
+        android:gravity="center"
+        android:text="@string/orset"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="36sp"
+        android:textSize="35sp"
         android:textStyle="bold"
+        app:autoSizeTextType="none"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,7 +36,7 @@
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4">
+        app:layout_constraintTop_toBottomOf="@id/orario">
 
         <TableRow
             android:layout_width="match_parent"
@@ -148,7 +153,7 @@
                 android:gravity="center_horizontal|center_vertical"
                 android:text="@string/Mattime"
                 android:textColor="@color/colorAccent"
-                android:textSize="12sp"
+                android:textSize="10sp"
                 android:textStyle="bold"
                 android:visibility="visible"
                 tools:visibility="visible" />
@@ -160,11 +165,11 @@
                 android:layout_height="58dp"
                 android:layout_column="2"
                 android:gravity="center"
-                android:inputType="date"
+                android:inputType="text"
                 android:text=""
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="@color/colorAccent"
-                android:textSize="12sp"
+                android:textSize="8sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -174,11 +179,11 @@
                 android:layout_height="58dp"
                 android:layout_column="3"
                 android:gravity="center"
-                android:inputType="date"
+                android:inputType="text"
                 android:text=""
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="@color/colorAccent"
-                android:textSize="12sp"
+                android:textSize="8sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -188,11 +193,11 @@
                 android:layout_height="58dp"
                 android:layout_column="4"
                 android:gravity="center"
-                android:inputType="date"
+                android:inputType="text"
                 android:text=""
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="@color/colorAccent"
-                android:textSize="12sp"
+                android:textSize="8sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -202,11 +207,11 @@
                 android:layout_height="58dp"
                 android:layout_column="5"
                 android:gravity="center"
-                android:inputType="date"
+                android:inputType="text"
                 android:text=""
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="@color/colorAccent"
-                android:textSize="12sp"
+                android:textSize="8sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -216,11 +221,11 @@
                 android:layout_height="58dp"
                 android:layout_column="6"
                 android:gravity="center"
-                android:inputType="date"
+                android:inputType="text"
                 android:text=""
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="@color/colorAccent"
-                android:textSize="12sp"
+                android:textSize="8sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -230,11 +235,11 @@
                 android:layout_height="58dp"
                 android:layout_column="7"
                 android:gravity="center"
-                android:inputType="date"
+                android:inputType="text"
                 android:text=""
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="@color/colorAccent"
-                android:textSize="12sp"
+                android:textSize="8sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -244,14 +249,14 @@
                 android:layout_height="58dp"
                 android:layout_column="8"
                 android:gravity="center"
-                android:inputType="date"
+                android:inputType="text"
                 android:text=""
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="@color/colorAccent"
-                android:textSize="12sp"
+                android:textSize="8sp"
                 android:textStyle="bold" />
 
-                </TableRow>
+        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
@@ -267,7 +272,7 @@
                 android:gravity="center_horizontal|center_vertical"
                 android:text="@string/pomtime"
                 android:textColor="@color/colorAccent"
-                android:textSize="12sp"
+                android:textSize="10sp"
                 android:textStyle="bold"
                 android:visibility="visible"
                 tools:visibility="visible" />
@@ -279,11 +284,11 @@
                 android:layout_height="58dp"
                 android:layout_column="2"
                 android:gravity="center"
-                android:inputType="date"
+                android:inputType="text"
                 android:text=""
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="@color/colorAccent"
-                android:textSize="12sp"
+                android:textSize="8sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -293,11 +298,11 @@
                 android:layout_height="58dp"
                 android:layout_column="3"
                 android:gravity="center"
-                android:inputType="date"
+                android:inputType="text"
                 android:text=""
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="@color/colorAccent"
-                android:textSize="12sp"
+                android:textSize="8sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -307,11 +312,11 @@
                 android:layout_height="58dp"
                 android:layout_column="4"
                 android:gravity="center"
-                android:inputType="date"
+                android:inputType="text"
                 android:text=""
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="@color/colorAccent"
-                android:textSize="12sp"
+                android:textSize="8sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -321,11 +326,11 @@
                 android:layout_height="58dp"
                 android:layout_column="5"
                 android:gravity="center"
-                android:inputType="date"
+                android:inputType="text"
                 android:text=""
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="@color/colorAccent"
-                android:textSize="12sp"
+                android:textSize="8sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -335,11 +340,11 @@
                 android:layout_height="58dp"
                 android:layout_column="6"
                 android:gravity="center"
-                android:inputType="date"
+                android:inputType="text"
                 android:text=""
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="@color/colorAccent"
-                android:textSize="12sp"
+                android:textSize="8sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -349,11 +354,11 @@
                 android:layout_height="58dp"
                 android:layout_column="7"
                 android:gravity="center"
-                android:inputType="date"
+                android:inputType="text"
                 android:text=""
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="@color/colorAccent"
-                android:textSize="12sp"
+                android:textSize="8sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -363,11 +368,11 @@
                 android:layout_height="58dp"
                 android:layout_column="8"
                 android:gravity="center"
-                android:inputType="date"
+                android:inputType="text"
                 android:text=""
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="@color/colorAccent"
-                android:textSize="12sp"
+                android:textSize="8sp"
                 android:textStyle="bold" />
 
         </TableRow>
