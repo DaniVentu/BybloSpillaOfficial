@@ -36,4 +36,5 @@
     <string name="day6">Sab</string>
     <string name="day7">Dom</string>
     <string name="orset">Orario</string>
+    <string name="ret">back</string>
 </resources>

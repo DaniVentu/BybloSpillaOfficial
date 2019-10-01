@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
+    android:padding="10dp"
     tools:context=".page_admin">
 
     <EditText
@@ -82,5 +83,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/numericpw" />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:id="@+id/retbtn"
+        tools:ignore="MissingConstraints"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/colorPrimary"
+        android:textStyle="italic|bold"
+        android:text="@string/ret"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
