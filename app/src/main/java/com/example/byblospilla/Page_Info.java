@@ -23,5 +23,6 @@ public class Page_Info extends AppCompatActivity {
                 startActivity(openret);
             }
         });
+
     }
 }
