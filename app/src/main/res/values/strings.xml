@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">BybloSpilla</string>
     <string name="app_name2">Byblos</string>
     <string name="name">Nome</string>
@@ -37,4 +37,5 @@
     <string name="day7">Dom</string>
     <string name="orset">Orario</string>
     <string name="ret">back</string>
+    <string name="description" tools:ignore="Typos">Biblioteca di Spilamberto per studenti gestita da studenti, bla bla bla cose cose cose COSE SCRITTE IN MAIUSCOLO, cose che non hanno senso tipo gastrointerite… la Dani e Andre hanno sviluppato questa app che probabilmente non prenderà piu di 20 ma comunque può essere utile per i ragazzi della byblos! saluti e baci ! </string>
 </resources>
