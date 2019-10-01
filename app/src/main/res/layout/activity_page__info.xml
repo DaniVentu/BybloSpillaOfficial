@@ -1,39 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    android:padding="10dp"
     tools:context=".Page_Info">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="250dp"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true"
+        android:layout_width="461dp"
+        android:layout_height="312dp"
+        android:contentDescription="@android:string/ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/logo_noscritta"
-        tools:ignore="ContentDescription" />
+        tools:layout_editor_absoluteY="-59dp" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/desc_text"
-        android:layout_below="@+id/imageView"
-        android:text="@string/description"
-        android:textColor="@color/colorAccent"
-        android:layout_centerHorizontal="true"/>
+        android:id="@+id/textView2"
+        android:layout_width="320dp"
+        android:layout_height="355dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:text="Aula Studio Byblos è un luogo dedicato allo studio silenzioso adiacente alla Biblioteca comunale di Spilamberto P. Impastato.\nViene autogestita da un gruppo di studenti che si prestano, in maniera volontaria, ad aprire e chiudere la biblioteca, offrendo anche aperture serali.\nLe due aule sono climatizzate e dotate di Wi-Fi e prese elettriche.\nL'Aula Studio si trova in Via S.Adriano 7, Spilamberto 41057 ed è possibile parcheggiare in centro storico."
+        android:textColor="#0C0707"
+        android:textSize="16sp"
+        android:typeface="serif"
+        android:justificationMode="inter_word"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <Button
-        android:layout_width="80dp"
-        android:layout_height="60dp"
-        android:id="@+id/retbtn"
-        tools:ignore="MissingConstraints"
-        android:textColor="@color/colorPrimaryDark"
-        android:background="@color/colorPrimary"
-        android:textStyle="italic|bold"
-        android:text="@string/ret"/>
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
