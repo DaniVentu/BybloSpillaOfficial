@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning"
+        android:fullBackupContent="@xml/backup_descriptor"
         android:allowBackup="true">
         <activity android:name=".Page_Timetable" />
         <activity android:name=".Page_Events" />
