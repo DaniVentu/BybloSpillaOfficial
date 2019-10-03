@@ -18,13 +18,14 @@
         tools:ignore="ContentDescription" />
 
     <TextView
+        android:id="@+id/desc_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/desc_text"
-        android:layout_below="@+id/imageView"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_marginTop="179dp"
         android:text="@string/description"
-        android:textColor="@color/colorAccent"
-        android:layout_centerHorizontal="true"/>
+        android:textColor="@color/colorAccent" />
+
 
     <Button
         android:layout_width="80dp"
@@ -35,5 +36,6 @@
         android:background="@color/colorPrimary"
         android:textStyle="italic|bold"
         android:text="@string/ret"/>
+
 
 </RelativeLayout>
