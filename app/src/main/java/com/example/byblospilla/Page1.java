@@ -62,7 +62,7 @@ public class Page1 extends AppCompatActivity {
 
         /* return */
         Button btnret = findViewById(R.id.retbtn);
-        final Intent openret = new Intent(Page1.this, Main2Activity.class);
+        final Intent openret = new Intent(Page1.this, MainActivity.class);
         btnret.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

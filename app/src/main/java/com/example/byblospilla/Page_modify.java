@@ -7,22 +7,20 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Page_Info extends AppCompatActivity {
+public class Page_modify extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_page__info);
-
+        setContentView(R.layout.activity_page_modify);
         /* return */
-        Button btnret = findViewById(R.id.retbtn);
-        final Intent openret = new Intent(Page_Info.this, Page1.class);
-        btnret.setOnClickListener(new View.OnClickListener() {
+        Button btnret1 = findViewById(R.id.retbtn1);
+        final Intent openret1 = new Intent(Page_modify.this, Page_Timetable.class);
+        btnret1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(openret);
+                startActivity(openret1);
             }
         });
-
     }
 }

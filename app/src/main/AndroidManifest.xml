@@ -4,22 +4,21 @@
     package="com.example.byblospilla">
 
     <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
         android:icon="@mipmap/b_logo1"
         android:label="@string/app_name2"
         android:roundIcon="@mipmap/b_logo1_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning"
-        android:fullBackupContent="@xml/backup_descriptor"
-        android:allowBackup="true">
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Page_modify"></activity>
         <activity android:name=".Page_Timetable" />
         <activity android:name=".Page_Events" />
         <activity android:name=".Page_Rooms" />
         <activity android:name=".Page_Settings" />
         <activity android:name=".Page_Info" />
-        <activity android:name=".page_admin" />
         <activity android:name=".Page1" />
-        <activity android:name=".Main2Activity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
