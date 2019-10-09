@@ -41,5 +41,11 @@
     <string name="si">corretto</string>
     <string name="add">+</string>
     <string name="save">Salva</string>
+    <string name="who">Chi Siamo?</string>
+    <string name="where">Dove Siamo?</string>
     <string name="description" tools:ignore="Typos">Biblioteca di Spilamberto per studenti gestita da studenti, bla bla bla cose cose cose COSE SCRITTE IN MAIUSCOLO, cose che non hanno senso tipo gastrointerite… la Dani e Andre hanno sviluppato questa app che probabilmente non prenderà piu di 20 ma comunque può essere utile per i ragazzi della byblos! saluti e baci ! </string>
+    <string name="promo">Grazie a BYBLOS ottieni le seguenti promozioni presso il Bar Caffè Mercato (via Umberto I,19,Spilamberto)</string>
+    <string name="viewpromo">Mostra questi coupon per ottenere le Promozioni</string>
+    <string name="caffè">Caffé 0,90€</string>
+    <string name="spritz">Spritz 4,50€</string>
 </resources>

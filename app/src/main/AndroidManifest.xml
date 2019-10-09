@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Page_modify"></activity>
+        <activity android:name=".Page_where"></activity>
         <activity android:name=".Page_Timetable" />
         <activity android:name=".Page_Events" />
         <activity android:name=".Page_Rooms" />

@@ -20,9 +20,9 @@ public class Page1 extends AppCompatActivity {
         TextView instagram = (TextView) findViewById(R.id.ig);
         instagram.setMovementMethod(LinkMovementMethod.getInstance());
 
-        /*Creo collegamento al button Impostazioni*/
+        /*Creo collegamento al button chi siamo?*/
         Button btnsetting = findViewById(R.id.btn_settings);
-        final Intent openbtn_settings = new Intent(Page1.this, Page_Settings.class);
+        final Intent openbtn_settings = new Intent(Page1.this, Page_Info.class);
         btnsetting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,6 +57,15 @@ public class Page1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(openbtn_timetable);
+            }
+        });
+        /*creo collegamento al button dove siamo*/
+        Button btnwhere = findViewById(R.id.btn_where);
+        final Intent openbtn_where = new Intent(Page1.this, Page_where.class);
+        btnwhere.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(openbtn_where);
             }
         });
 

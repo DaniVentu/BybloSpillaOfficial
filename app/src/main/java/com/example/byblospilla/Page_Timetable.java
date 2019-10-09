@@ -27,23 +27,9 @@ public class Page_Timetable extends AppCompatActivity {
             }
         });
 
-
-
-        /*button +
-        final Button btnplus = findViewById(R.id.btn_modify);
-        final Intent openmodify = new Intent(Page_Timetable.this, Page_modify.class);
-        btnplus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                startActivity(openmodify);
-            }
-        });*/
-
-        /*prova dialog*/
+        /*button dialog*/
 
         Button mShowDialog = findViewById(R.id.btnShowDialog);
-        final Intent openShowDialog = new Intent(Page_Timetable.this, Page_modify.class);
 
         mShowDialog.setOnClickListener(new View.OnClickListener() {
 
@@ -61,9 +47,6 @@ public class Page_Timetable extends AppCompatActivity {
                 dialog.show();
 
                 /*codice per impostare il Dialog di modifica*/
-
-                final Intent openLogin = new Intent(Page_Timetable.this,Page_modify.class);
-
                 mLogin.setOnClickListener(new View.OnClickListener() {
 
                     @Override
@@ -75,7 +58,7 @@ public class Page_Timetable extends AppCompatActivity {
                         }else if (mPassword.getText().toString().equals(pw)){
                             Toast.makeText(Page_Timetable.this, R.string.si,Toast.LENGTH_SHORT).show();
                             dialog.dismiss();
-                            /*inizio codice modifica timetable*/
+                            /*starting modifying timetable code*/
                             AlertDialog.Builder LBuilder = new AlertDialog.Builder(Page_Timetable.this);
                             View LView = getLayoutInflater().inflate(R.layout.modify_timetable, null);
                             Button LSalva = LView.findViewById(R.id.btnsalva);
@@ -88,14 +71,11 @@ public class Page_Timetable extends AppCompatActivity {
                                 public void onClick(View v) {
                                     Toast.makeText(Page_Timetable.this,"Modifiche Salvate Correttamente!",Toast.LENGTH_SHORT).show();
                                     /*
-                                    * Istruzioni di salvataggio
+                                    * salvataggio su TextView
                                     * */
                                     dialog1.dismiss();
                                 }
                             });
-
-                            //startActivity(openShowDialog); // da cancellare
-                            /*fine codice modifica timetable*/
                         }
                         else{
                             Toast.makeText(Page_Timetable.this, R.string.no, Toast.LENGTH_SHORT).show();

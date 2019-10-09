@@ -31,7 +31,7 @@ public class Page_Events extends AppCompatActivity {
         /*prova dialog*/
 
         Button mShowDialog = findViewById(R.id.btnShowDialog);
-        final Intent openShowDialog = new Intent(Page_Events.this, Page_modify.class);
+
 
         mShowDialog.setOnClickListener(new View.OnClickListener() {
 
@@ -57,7 +57,7 @@ public class Page_Events extends AppCompatActivity {
                             dialog.dismiss();
                         }else if (mPassword.getText().toString().equals(pw)){
                             Toast.makeText(Page_Events.this, R.string.si,Toast.LENGTH_SHORT).show();
-                            startActivity(openShowDialog);
+
                         }
                         else{
                             Toast.makeText(Page_Events.this, R.string.no, Toast.LENGTH_SHORT).show();
