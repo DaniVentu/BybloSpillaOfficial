@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:paddingTop="10dp">
+
+    <TableLayout
+        android:id="@+id/TL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:ignore="UselessParent">
+
+        <TableRow
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/blanc"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/mattino"
+                android:layout_width="144dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/Mattime"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pomeriggio"
+                android:layout_width="144dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/pomtime"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/lun"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/day1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/m1"
+                android:layout_width="144dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:inputType=""
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/p1"
+                android:layout_width="144dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:inputType=""
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                tools:ignore="LabelFor" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/r3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/mar"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/day2"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/m2"
+                android:layout_width="144dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:inputType=""
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/p2"
+                android:layout_width="144dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:inputType=""
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                tools:ignore="LabelFor" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/r4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/mer"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/day3"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/m3"
+                android:layout_width="144dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:inputType=""
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/p3"
+                android:layout_width="144dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:inputType=""
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                tools:ignore="LabelFor" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/r5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/gio"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/day4"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/m4"
+                android:layout_width="144dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:inputType=""
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/p4"
+                android:layout_width="144dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:inputType=""
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                tools:ignore="LabelFor" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/r6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/ven"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/day5"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/m5"
+                android:layout_width="144dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:inputType=""
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/p5"
+                android:layout_width="144dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:inputType=""
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                tools:ignore="LabelFor" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/r7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/sab"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/day6"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/m6"
+                android:layout_width="144dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:inputType=""
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/p6"
+                android:layout_width="144dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:inputType=""
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                tools:ignore="LabelFor" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/r8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/dom"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/day7"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/m7"
+                android:layout_width="144dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:inputType=""
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/p7"
+                android:layout_width="144dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:inputType=""
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                tools:ignore="LabelFor" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnsalva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/save"
+        android:textColor="@color/colorPrimaryDark" />
+
+</RelativeLayout>
