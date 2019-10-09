@@ -48,4 +48,6 @@
     <string name="viewpromo">Mostra questi coupon per ottenere le Promozioni</string>
     <string name="caffè">Caffé 0,90€</string>
     <string name="spritz">Spritz 4,50€</string>
+    <string name="avviso">Inserire un Avviso</string>
+    <string name="hintevent">Scrivi qui</string>
 </resources>

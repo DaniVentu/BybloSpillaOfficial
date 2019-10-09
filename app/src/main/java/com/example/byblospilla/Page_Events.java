@@ -29,9 +29,7 @@ public class Page_Events extends AppCompatActivity {
 
 
         /*prova dialog*/
-
         Button mShowDialog = findViewById(R.id.btnShowDialog);
-
 
         mShowDialog.setOnClickListener(new View.OnClickListener() {
 
@@ -41,7 +39,7 @@ public class Page_Events extends AppCompatActivity {
 
                 AlertDialog.Builder mBuilder = new AlertDialog.Builder(Page_Events.this);
                 View mView = getLayoutInflater().inflate(R.layout.my_dialog, null);
-                final EditText mPassword =  mView.findViewById(R.id.numericpw);
+                final EditText mPassword = mView.findViewById(R.id.numericpw);
                 Button mLogin = mView.findViewById(R.id.btnLogin);
 
                 mBuilder.setView(mView);
@@ -52,14 +50,31 @@ public class Page_Events extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         String pw = "1923";
-                        if(mPassword.getText().toString().isEmpty()){
+                        if (mPassword.getText().toString().isEmpty()) {
                             Toast.makeText(Page_Events.this, "Inserisci codice Admin", Toast.LENGTH_SHORT).show();
                             dialog.dismiss();
-                        }else if (mPassword.getText().toString().equals(pw)){
-                            Toast.makeText(Page_Events.this, R.string.si,Toast.LENGTH_SHORT).show();
+                        } else if (mPassword.getText().toString().equals(pw)) {
+                            Toast.makeText(Page_Events.this, R.string.si, Toast.LENGTH_SHORT).show();
+                            dialog.dismiss();
+                            /*starting modifying timetable code*/
+                            AlertDialog.Builder LBuilder = new AlertDialog.Builder(Page_Events.this);
+                            View LView = getLayoutInflater().inflate(R.layout.modify_events, null);
+                            Button LSalva = LView.findViewById(R.id.btnsalva);
+                            LBuilder.setView(LView);
+                            final AlertDialog dialog1 = LBuilder.create();
+                            dialog1.show();
 
-                        }
-                        else{
+                            LSalva.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    Toast.makeText(Page_Events.this, "Modifiche Salvate Correttamente!", Toast.LENGTH_SHORT).show();
+                                    /*
+                                     * salvataggio su TextView
+                                     * */
+                                    dialog1.dismiss();
+                                }
+                            });
+                        } else {
                             Toast.makeText(Page_Events.this, R.string.no, Toast.LENGTH_SHORT).show();
                             dialog.dismiss();
                         }
@@ -69,5 +84,4 @@ public class Page_Events extends AppCompatActivity {
             }
         });
     }
-
 }
