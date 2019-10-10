@@ -54,12 +54,12 @@
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_below="@+id/textAvvisi"
-        android:drawableStart="@drawable/icona_puntina"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:hint="@string/nex_alert"
+        android:drawableStart="@drawable/icona_puntina"
+        android:drawableLeft="@drawable/icona_puntina"
         android:gravity="center"
-        android:drawableLeft="@drawable/icona_puntina" />
+        android:text="@string/nex_alert" />
     <TextView
         android:id="@+id/editText2"
         android:layout_width="250dp"
@@ -68,6 +68,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:hint="@string/nex_alert"
+        android:text=""
         android:gravity="center"
         android:drawableStart="@drawable/icona_puntina"
         android:drawableLeft="@drawable/icona_puntina"/>
@@ -79,6 +80,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:hint="@string/nex_alert"
+        android:text=""
         android:gravity="center"
         android:drawableStart="@drawable/icona_puntina"
         android:drawableLeft="@drawable/icona_puntina"/>
@@ -90,6 +92,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:hint="@string/nex_alert"
+        android:text=""
         android:gravity="center"
         android:drawableStart="@drawable/icona_puntina"
         android:drawableLeft="@drawable/icona_puntina"/>
@@ -101,6 +104,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:hint="@string/nex_alert"
+        android:text=""
         android:gravity="center"
         android:drawableStart="@drawable/icona_puntina"
         android:drawableLeft="@drawable/icona_puntina"/>
@@ -112,6 +116,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:hint="@string/nex_alert"
+        android:text=""
         android:gravity="center"
         android:drawableStart="@drawable/icona_puntina"
         android:drawableLeft="@drawable/icona_puntina"/>

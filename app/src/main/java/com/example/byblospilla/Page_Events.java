@@ -16,6 +16,7 @@ public class Page_Events extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page__events);
+        
 
         /* return */
         Button btnret = findViewById(R.id.retbtn);
@@ -64,13 +65,12 @@ public class Page_Events extends AppCompatActivity {
                             final AlertDialog dialog1 = LBuilder.create();
                             dialog1.show();
 
+
                             LSalva.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
+
                                     Toast.makeText(Page_Events.this, "Modifiche Salvate Correttamente!", Toast.LENGTH_SHORT).show();
-                                    /*
-                                     * salvataggio su TextView
-                                     * */
                                     dialog1.dismiss();
                                 }
                             });
@@ -83,5 +83,6 @@ public class Page_Events extends AppCompatActivity {
                 });
             }
         });
+
     }
 }
