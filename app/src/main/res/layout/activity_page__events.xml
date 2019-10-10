@@ -54,10 +54,12 @@
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_below="@+id/textAvvisi"
+        android:drawableStart="@drawable/icona_puntina"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="100dp"
         android:hint="@string/nex_alert"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:drawableLeft="@drawable/icona_puntina" />
     <TextView
         android:id="@+id/editText2"
         android:layout_width="250dp"
@@ -66,7 +68,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:hint="@string/nex_alert"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:drawableStart="@drawable/icona_puntina"
+        android:drawableLeft="@drawable/icona_puntina"/>
     <TextView
         android:id="@+id/editText3"
         android:layout_width="250dp"
@@ -75,7 +79,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:hint="@string/nex_alert"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:drawableStart="@drawable/icona_puntina"
+        android:drawableLeft="@drawable/icona_puntina"/>
     <TextView
         android:id="@+id/editText4"
         android:layout_width="250dp"
@@ -84,7 +90,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:hint="@string/nex_alert"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:drawableStart="@drawable/icona_puntina"
+        android:drawableLeft="@drawable/icona_puntina"/>
     <TextView
         android:id="@+id/editText5"
         android:layout_width="250dp"
@@ -93,7 +101,20 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:hint="@string/nex_alert"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:drawableStart="@drawable/icona_puntina"
+        android:drawableLeft="@drawable/icona_puntina"/>
+    <TextView
+        android:id="@+id/editText6"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editText5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="@string/nex_alert"
+        android:gravity="center"
+        android:drawableStart="@drawable/icona_puntina"
+        android:drawableLeft="@drawable/icona_puntina"/>
 
 
 </RelativeLayout>
