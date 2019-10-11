@@ -37,7 +37,6 @@ public class modify_timetable_dialog extends AppCompatDialogFragment {
         View view = inflater.inflate(R.layout.modify_timetable, null);
 
         builder.setView(view)
-                .setTitle("edit")
                 .setNegativeButton("Annulla", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

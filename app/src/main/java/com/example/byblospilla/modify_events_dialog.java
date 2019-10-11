@@ -25,7 +25,6 @@ public class modify_events_dialog extends AppCompatDialogFragment {
         View view = inflater.inflate(R.layout.modify_events,null);
 
         builder.setView(view)
-                .setTitle("Edit")
                 .setNegativeButton("Annulla", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
