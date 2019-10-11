@@ -27,16 +27,5 @@
         tools:ignore="TextFields"
         android:importantForAutofill="no" />
 
-    <Button
-        android:id="@+id/btnsalva"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editevents"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:background="@color/colorPrimary"
-        android:onClick="Registra"
-        android:text="@string/save"
-        android:textColor="@color/colorPrimaryDark" />
 
 </RelativeLayout>

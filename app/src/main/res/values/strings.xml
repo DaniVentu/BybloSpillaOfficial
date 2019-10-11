@@ -38,7 +38,7 @@
     <string name="orset">Orario</string>
     <string name="ret">back</string>
     <string name="no">sbagliato</string>
-    <string name="si">corretto</string>
+    <string name="si">CORRETTO! Clicca su + per inserire un nuovo Avviso!</string>
     <string name="add">+</string>
     <string name="save">Salva</string>
     <string name="who">Chi Siamo?</string>
