@@ -3,14 +3,12 @@
     <item>
         <shape android:shape="rectangle">
             <gradient
-                android:startColor="@color/colorAccent"
-                android:endColor="@color/colorPrimaryDark"
+                android:startColor="@color/colorPrimaryDark"
+                android:endColor="#DA527CCF"
                 android:type="linear"
-                android:angle="90.0"
-                android:alpha="0.7"
                 />
             <!--corners allow us to make the rounded corners button-->
-            <corners android:radius="8dp"/>
+            <corners android:radius="9dp"/>
         </shape>
     </item>
 </selector>

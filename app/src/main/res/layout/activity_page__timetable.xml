@@ -10,14 +10,13 @@
 
     <TextView
         android:id="@+id/orario"
-        android:layout_width="311dp"
-        android:layout_height="53dp"
+        android:layout_width="309dp"
+        android:layout_height="37dp"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
-        android:layout_marginBottom="10dp"
         android:bufferType="normal"
         android:gravity="center"
         android:text="@string/orset"
@@ -39,7 +38,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="23dp"
         android:background="@color/colorPrimary"
         android:focusedMonthDateColor="@color/colorAccent"
         android:selectedWeekBackgroundColor="@color/colorPrimaryDark"
@@ -69,8 +68,8 @@
 
     <TableLayout
         android:id="@+id/TL"
-        android:layout_width="403dp"
-        android:layout_height="260dp"
+        android:layout_width="389dp"
+        android:layout_height="246dp"
         android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -95,6 +94,7 @@
                 android:gravity="start"
                 android:text="@string/Mattime"
                 android:textColor="@color/colorPrimaryDark"
+                android:textSize="15dp"
                 android:textStyle="bold" />
 
             <TextView
@@ -104,6 +104,7 @@
                 android:gravity="start"
                 android:text="@string/pomtime"
                 android:textColor="@color/colorPrimaryDark"
+                android:textSize="15dp"
                 android:textStyle="bold" />
         </TableRow>
 
@@ -120,7 +121,7 @@
                 android:gravity="center"
                 android:text="@string/day1"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="18sp"
+                android:textSize="15dp"
                 android:textStyle="bold" />
 
             <TextView
@@ -153,7 +154,7 @@
                 android:gravity="center"
                 android:text="@string/day2"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="18sp"
+                android:textSize="15dp"
                 android:textStyle="bold" />
 
             <TextView
@@ -186,7 +187,7 @@
                 android:gravity="center"
                 android:text="@string/day3"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="18sp"
+                android:textSize="15dp"
                 android:textStyle="bold" />
 
             <TextView
@@ -219,7 +220,7 @@
                 android:gravity="center"
                 android:text="@string/day4"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="18sp"
+                android:textSize="15dp"
                 android:textStyle="bold" />
 
             <TextView
@@ -252,7 +253,7 @@
                 android:gravity="center"
                 android:text="@string/day5"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="18sp"
+                android:textSize="15dp"
                 android:textStyle="bold" />
 
             <TextView
@@ -285,7 +286,7 @@
                 android:gravity="center"
                 android:text="@string/day6"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="18sp"
+                android:textSize="15dp"
                 android:textStyle="bold" />
 
             <TextView
@@ -318,7 +319,7 @@
                 android:gravity="center"
                 android:text="@string/day7"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="18sp"
+                android:textSize="15dp"
                 android:textStyle="bold" />
 
             <TextView

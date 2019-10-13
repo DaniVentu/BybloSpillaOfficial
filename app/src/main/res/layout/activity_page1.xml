@@ -10,12 +10,13 @@
 
     <Button
         android:id="@+id/btn_timetable"
-        android:alpha="0.9"
         android:layout_width="409dp"
         android:layout_height="70dp"
         android:layout_below="@+id/imageView3"
         android:layout_marginTop="-90dp"
         android:background="@drawable/button_rounded_corners"
+        android:drawableRight="@drawable/icona_go"
+        android:drawableEnd="@drawable/icona_go"
         android:drawableStart="@drawable/icona_clock"
         android:drawableLeft="@drawable/icona_clock"
         android:padding="15dp"
@@ -26,11 +27,12 @@
 
     <Button
         android:id="@+id/btn_events"
-        android:alpha="0.9"
         android:layout_width="409dp"
         android:layout_height="70dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/button_rounded_corners"
+        android:drawableRight="@drawable/icona_go"
+        android:drawableEnd="@drawable/icona_go"
         android:drawableStart="@drawable/icona_avviso"
         android:drawableLeft="@drawable/icona_avviso"
         android:padding="15dp"
@@ -45,11 +47,12 @@
 
     <Button
         android:id="@+id/btn_rooms"
-        android:alpha="0.9"
         android:layout_width="409dp"
         android:layout_height="70dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/button_rounded_corners"
+        android:drawableRight="@drawable/icona_go"
+        android:drawableEnd="@drawable/icona_go"
         android:drawableStart="@drawable/icona_aula"
         android:drawableLeft="@drawable/icona_aula"
         android:padding="15dp"
@@ -66,10 +69,11 @@
 
     <Button
         android:id="@+id/btn_settings"
-        android:alpha="0.9"
         android:layout_width="409dp"
         android:layout_height="70dp"
         android:background="@drawable/button_rounded_corners"
+        android:drawableRight="@drawable/icona_go"
+        android:drawableEnd="@drawable/icona_go"
         android:drawableStart="@drawable/icona_who"
         android:drawableLeft="@drawable/icona_who"
         android:padding="15dp"
@@ -82,10 +86,11 @@
 
     <Button
         android:id="@+id/btn_where"
-        android:alpha="0.9"
         android:layout_width="409dp"
         android:layout_height="70dp"
         android:background="@drawable/button_rounded_corners"
+        android:drawableRight="@drawable/icona_go"
+        android:drawableEnd="@drawable/icona_go"
         android:drawableStart="@drawable/icona_location"
         android:drawableLeft="@drawable/icona_location"
         android:padding="15dp"
@@ -98,10 +103,11 @@
 
     <Button
         android:id="@+id/btn_insta"
-        android:alpha="0.9"
         android:layout_width="409dp"
         android:layout_height="70dp"
         android:background="@drawable/button_rounded_corners"
+        android:drawableRight="@drawable/icona_go"
+        android:drawableEnd="@drawable/icona_go"
         android:drawableStart="@drawable/icona_insta"
         android:drawableLeft="@drawable/icona_who"
         android:padding="15dp"
@@ -115,7 +121,6 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:alpha="0.9"
         android:layout_width="239dp"
         android:layout_height="142dp"
         android:layout_centerHorizontal="true"
