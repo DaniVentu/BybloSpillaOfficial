@@ -6,11 +6,28 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Page_Timetable extends AppCompatActivity {
+public class Page_Timetable extends AppCompatActivity implements modify_timetable_dialog.modify_timetable_dialogListener {
+
+    private TextView textViewm1;
+    private TextView textViewp1;
+    private TextView textViewm2;
+    private TextView textViewp2;
+    private TextView textViewm3;
+    private TextView textViewp3;
+    private TextView textViewm4;
+    private TextView textViewp4;
+    private TextView textViewm5;
+    private TextView textViewp5;
+    private TextView textViewm6;
+    private TextView textViewp6;
+    private TextView textViewm7;
+    private TextView textViewp7;
+    private Button btnadd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,23 +76,28 @@ public class Page_Timetable extends AppCompatActivity {
                             Toast.makeText(Page_Timetable.this, R.string.si,Toast.LENGTH_SHORT).show();
                             dialog.dismiss();
                             /*starting modifying timetable code*/
-                            AlertDialog.Builder LBuilder = new AlertDialog.Builder(Page_Timetable.this);
-                            View LView = getLayoutInflater().inflate(R.layout.modify_timetable, null);
-                            Button LSalva = LView.findViewById(R.id.btnsalva);
-                            LBuilder.setView(LView);
-                            final AlertDialog dialog1 = LBuilder.create();
-                            dialog1.show();
-
-                            LSalva.setOnClickListener(new View.OnClickListener() {
+                            textViewm1 = findViewById(R.id.m1);
+                            textViewp1 = findViewById(R.id.p1);
+                            textViewm2 = findViewById(R.id.m2);
+                            textViewp2 = findViewById(R.id.p2);
+                            textViewm3 = findViewById(R.id.m3);
+                            textViewp3 = findViewById(R.id.p3);
+                            textViewm4 = findViewById(R.id.m4);
+                            textViewp4 = findViewById(R.id.p4);
+                            textViewm5 = findViewById(R.id.m5);
+                            textViewp5 = findViewById(R.id.p5);
+                            textViewm6 = findViewById(R.id.m6);
+                            textViewp6 = findViewById(R.id.p6);
+                            textViewm7 = findViewById(R.id.m7);
+                            textViewp7 = findViewById(R.id.p7);
+                            btnadd = findViewById(R.id.btnShowDialog);
+                            btnadd.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    Toast.makeText(Page_Timetable.this,"Modifiche Salvate Correttamente!",Toast.LENGTH_SHORT).show();
-                                    /*
-                                    * salvataggio su TextView
-                                    * */
-                                    dialog1.dismiss();
+                                    openDialog();
                                 }
                             });
+
                         }
                         else{
                             Toast.makeText(Page_Timetable.this, R.string.no, Toast.LENGTH_SHORT).show();
@@ -86,5 +108,28 @@ public class Page_Timetable extends AppCompatActivity {
                 });
             }
         });
+    }
+
+    @Override
+    public void applyTexts1(String m1, String p1, String m2, String p2, String m3, String p3, String m4, String p4, String m5, String p5, String m6, String p6, String m7, String p7) {
+        textViewm1.setText(m1);
+        textViewp1.setText(p1);
+        textViewm2.setText(m2);
+        textViewp2.setText(p2);
+        textViewm3.setText(m3);
+        textViewp3.setText(p3);
+        textViewm4.setText(m4);
+        textViewp4.setText(p4);
+        textViewm5.setText(m5);
+        textViewp5.setText(p5);
+        textViewm6.setText(m6);
+        textViewp6.setText(p6);
+        textViewm7.setText(m7);
+        textViewp7.setText(p7);
+    }
+
+    public void openDialog(){
+        modify_timetable_dialog modify_timetable_dialog = new modify_timetable_dialog();
+        modify_timetable_dialog.show(getSupportFragmentManager(),"modify timetable dialog");
     }
 }

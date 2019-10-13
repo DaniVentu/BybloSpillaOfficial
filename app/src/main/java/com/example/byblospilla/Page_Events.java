@@ -6,16 +6,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Page_Events extends AppCompatActivity {
+public class Page_Events extends AppCompatActivity implements modify_events_dialog.modify_events_dialog_Listener{
+
+    private TextView textView1;
+    private Button btnadd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page__events);
+
 
         /* return */
         Button btnret = findViewById(R.id.retbtn);
@@ -36,7 +41,6 @@ public class Page_Events extends AppCompatActivity {
             @Override
 
             public void onClick(View view) {
-
                 AlertDialog.Builder mBuilder = new AlertDialog.Builder(Page_Events.this);
                 View mView = getLayoutInflater().inflate(R.layout.my_dialog, null);
                 final EditText mPassword = mView.findViewById(R.id.numericpw);
@@ -54,24 +58,15 @@ public class Page_Events extends AppCompatActivity {
                             Toast.makeText(Page_Events.this, "Inserisci codice Admin", Toast.LENGTH_SHORT).show();
                             dialog.dismiss();
                         } else if (mPassword.getText().toString().equals(pw)) {
-                            Toast.makeText(Page_Events.this, R.string.si, Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Page_Events.this, R.string.si, Toast.LENGTH_LONG).show();
                             dialog.dismiss();
                             /*starting modifying timetable code*/
-                            AlertDialog.Builder LBuilder = new AlertDialog.Builder(Page_Events.this);
-                            View LView = getLayoutInflater().inflate(R.layout.modify_events, null);
-                            Button LSalva = LView.findViewById(R.id.btnsalva);
-                            LBuilder.setView(LView);
-                            final AlertDialog dialog1 = LBuilder.create();
-                            dialog1.show();
-
-                            LSalva.setOnClickListener(new View.OnClickListener() {
+                            textView1 = findViewById(R.id.editText1);
+                            btnadd = findViewById(R.id.btnShowDialog);
+                            btnadd.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    Toast.makeText(Page_Events.this, "Modifiche Salvate Correttamente!", Toast.LENGTH_SHORT).show();
-                                    /*
-                                     * salvataggio su TextView
-                                     * */
-                                    dialog1.dismiss();
+                                    openDialog();
                                 }
                             });
                         } else {
@@ -83,5 +78,16 @@ public class Page_Events extends AppCompatActivity {
                 });
             }
         });
+
     }
+    public void openDialog(){
+        modify_events_dialog modify_events_dialog = new modify_events_dialog();
+        modify_events_dialog.show(getSupportFragmentManager(),"modify events dialog");
+    }
+
+    @Override
+    public void applyTexts(String editEvents) {
+        textView1.setText(editEvents);
+    }
+
 }

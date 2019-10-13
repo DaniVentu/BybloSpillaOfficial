@@ -38,7 +38,7 @@
     <string name="orset">Orario</string>
     <string name="ret">back</string>
     <string name="no">sbagliato</string>
-    <string name="si">corretto</string>
+    <string name="si">CORRETTO! Clicca su + per inserire una nuova Modifica!</string>
     <string name="add">+</string>
     <string name="save">Salva</string>
     <string name="who">Chi Siamo?</string>
@@ -50,4 +50,5 @@
     <string name="spritz">Spritz 4,50€</string>
     <string name="avviso">Inserire un Avviso</string>
     <string name="hintevent">Scrivi qui</string>
+    <string name="nex_alert">Nessun Avviso</string>
 </resources>

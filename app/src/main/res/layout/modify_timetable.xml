@@ -63,7 +63,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/m1"
+                android:id="@+id/m11"
                 android:layout_width="144dp"
                 android:layout_height="50dp"
                 android:gravity="center"
@@ -75,7 +75,7 @@
                 tools:ignore="LabelFor" />
 
             <EditText
-                android:id="@+id/p1"
+                android:id="@+id/p11"
                 android:layout_width="144dp"
                 android:layout_height="50dp"
                 android:gravity="center"
@@ -104,7 +104,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/m2"
+                android:id="@+id/m22"
                 android:layout_width="144dp"
                 android:layout_height="50dp"
                 android:gravity="center"
@@ -116,7 +116,7 @@
                 tools:ignore="LabelFor" />
 
             <EditText
-                android:id="@+id/p2"
+                android:id="@+id/p22"
                 android:layout_width="144dp"
                 android:layout_height="50dp"
                 android:gravity="center"
@@ -145,7 +145,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/m3"
+                android:id="@+id/m33"
                 android:layout_width="144dp"
                 android:layout_height="50dp"
                 android:gravity="center"
@@ -157,7 +157,7 @@
                 tools:ignore="LabelFor" />
 
             <EditText
-                android:id="@+id/p3"
+                android:id="@+id/p33"
                 android:layout_width="144dp"
                 android:layout_height="50dp"
                 android:gravity="center"
@@ -186,7 +186,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/m4"
+                android:id="@+id/m44"
                 android:layout_width="144dp"
                 android:layout_height="50dp"
                 android:gravity="center"
@@ -198,7 +198,7 @@
                 tools:ignore="LabelFor" />
 
             <EditText
-                android:id="@+id/p4"
+                android:id="@+id/p44"
                 android:layout_width="144dp"
                 android:layout_height="50dp"
                 android:gravity="center"
@@ -227,7 +227,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/m5"
+                android:id="@+id/m55"
                 android:layout_width="144dp"
                 android:layout_height="50dp"
                 android:gravity="center"
@@ -239,7 +239,7 @@
                 tools:ignore="LabelFor" />
 
             <EditText
-                android:id="@+id/p5"
+                android:id="@+id/p55"
                 android:layout_width="144dp"
                 android:layout_height="50dp"
                 android:gravity="center"
@@ -268,7 +268,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/m6"
+                android:id="@+id/m66"
                 android:layout_width="144dp"
                 android:layout_height="50dp"
                 android:gravity="center"
@@ -280,7 +280,7 @@
                 tools:ignore="LabelFor" />
 
             <EditText
-                android:id="@+id/p6"
+                android:id="@+id/p66"
                 android:layout_width="144dp"
                 android:layout_height="50dp"
                 android:gravity="center"
@@ -309,7 +309,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/m7"
+                android:id="@+id/m77"
                 android:layout_width="144dp"
                 android:layout_height="50dp"
                 android:gravity="center"
@@ -321,7 +321,7 @@
                 tools:ignore="LabelFor" />
 
             <EditText
-                android:id="@+id/p7"
+                android:id="@+id/p77"
                 android:layout_width="144dp"
                 android:layout_height="50dp"
                 android:gravity="center"
@@ -334,16 +334,5 @@
         </TableRow>
 
     </TableLayout>
-
-    <Button
-        android:id="@+id/btnsalva"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/TL"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:background="@color/colorPrimary"
-        android:text="@string/save"
-        android:textColor="@color/colorPrimaryDark" />
 
 </RelativeLayout>
