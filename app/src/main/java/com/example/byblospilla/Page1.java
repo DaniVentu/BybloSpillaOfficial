@@ -1,6 +1,7 @@
 package com.example.byblospilla;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
 import android.view.View;
@@ -15,10 +16,6 @@ public class Page1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page1);
-
-        /* Creo il collegamento alla pagina instagram "aulastudibyblos" */
-        TextView instagram = (TextView) findViewById(R.id.ig);
-        instagram.setMovementMethod(LinkMovementMethod.getInstance());
 
         /*Creo collegamento al button chi siamo?*/
         Button btnsetting = findViewById(R.id.btn_settings);
@@ -59,6 +56,8 @@ public class Page1 extends AppCompatActivity {
                 startActivity(openbtn_timetable);
             }
         });
+
+
         /*creo collegamento al button dove siamo*/
         Button btnwhere = findViewById(R.id.btn_where);
         final Intent openbtn_where = new Intent(Page1.this, Page_where.class);
@@ -79,8 +78,10 @@ public class Page1 extends AppCompatActivity {
             }
         });
 
-
     }
 
-
+    public void instagram_link(View view) {
+        Intent instagramIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://instagram.com/aulastudiobyblos?igshid=mp7ipsmcjxz8"));
+        startActivity(instagramIntent);
+    }
 }

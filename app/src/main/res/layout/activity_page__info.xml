@@ -28,14 +28,18 @@
 
 
     <Button
-        android:layout_width="80dp"
-        android:layout_height="60dp"
         android:id="@+id/retbtn"
-        tools:ignore="MissingConstraints"
-        android:textColor="@color/colorPrimaryDark"
-        android:background="@color/colorPrimary"
-        android:textStyle="italic|bold"
-        android:text="@string/ret"/>
+        style="?borderlessButtonStyle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_back"
+        android:drawableTop="@drawable/icona_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/credits"

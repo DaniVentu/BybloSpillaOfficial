@@ -3,9 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
         <item
             android:id="@+id/puntina1"
-            android:drawable="@drawable/puntina_trasp"
-            android:width="37dp"
-            android:height="50dp"
+            android:drawable="@drawable/puntina"
+            android:width="25dp"
+            android:height="25dp"
             android:gravity="start"
             tools:targetApi="m"
             tools:ignore="UnusedAttribute" />

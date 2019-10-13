@@ -13,7 +13,7 @@
     <string name="Info">Chi Siamo?</string>
     <string name="prova">Benvenuto nella app Byblos</string>
     <string name="access">Entra in Byblos</string>
-    <string name="Timetab">Orario Settimanale</string>
+    <string name="Timetab">Orario</string>
     <string name="avvisi">Avvisi</string>
     <string name="settings">Impostazioni</string>
     <string name="rooms">Aule</string>
@@ -26,8 +26,8 @@
     <string name="Code">Enter Admin Code</string>
     <string name="notify">Notifiche</string>
     <string name="week">Settimana Corrente</string>
-    <string name="Mattime">Orario Mattino</string>
-    <string name="pomtime">Orario Pomeriggio</string>
+    <string name="Mattime">Mattino</string>
+    <string name="pomtime">Pomeriggio</string>
     <string name="day1">Lun</string>
     <string name="day2">Mar</string>
     <string name="day3">Mer</string>
@@ -51,4 +51,6 @@
     <string name="avviso">Inserire un Avviso</string>
     <string name="hintevent">Scrivi qui</string>
     <string name="nex_alert">Nessun Avviso</string>
+    <string name="insta">FOLLOW US</string>
+    <string name="google_maps_key">AIzaSyB7keuvuA3rAWhy4ZRtCfXmlo1ZQbehSak</string>
 </resources>

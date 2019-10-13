@@ -20,34 +20,40 @@
         android:gravity="center|center_horizontal|center_vertical"
         android:text="@string/avvisi"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="36sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <Button
-        android:layout_width="80dp"
-        android:layout_height="60dp"
         android:id="@+id/retbtn"
-        tools:ignore="MissingConstraints"
-        android:textColor="@color/colorPrimaryDark"
-        android:background="@color/colorPrimary"
-        android:textStyle="italic|bold"
-        android:text="@string/ret"/>
+        style="?borderlessButtonStyle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_back"
+        android:drawableTop="@drawable/icona_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btnShowDialog"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimary"
-        android:text="@string/add"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="18sp"
-        android:layout_marginRight="10dp"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="10dp"/>
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_back"
+        android:drawableTop="@drawable/icona_plus"
+        />
 
     <TextView
         android:id="@+id/editText1"
@@ -60,6 +66,7 @@
         android:drawableLeft="@drawable/icona_puntina"
         android:gravity="center"
         android:text="@string/nex_alert" />
+
     <TextView
         android:id="@+id/editText2"
         android:layout_width="250dp"
@@ -72,6 +79,7 @@
         android:gravity="center"
         android:drawableStart="@drawable/icona_puntina"
         android:drawableLeft="@drawable/icona_puntina"/>
+
     <TextView
         android:id="@+id/editText3"
         android:layout_width="250dp"
@@ -84,6 +92,7 @@
         android:gravity="center"
         android:drawableStart="@drawable/icona_puntina"
         android:drawableLeft="@drawable/icona_puntina"/>
+
     <TextView
         android:id="@+id/editText4"
         android:layout_width="250dp"
@@ -96,23 +105,12 @@
         android:gravity="center"
         android:drawableStart="@drawable/icona_puntina"
         android:drawableLeft="@drawable/icona_puntina"/>
+
     <TextView
         android:id="@+id/editText5"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_below="@+id/editText4"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:hint="@string/nex_alert"
-        android:text=""
-        android:gravity="center"
-        android:drawableStart="@drawable/icona_puntina"
-        android:drawableLeft="@drawable/icona_puntina"/>
-    <TextView
-        android:id="@+id/editText6"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/editText5"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:hint="@string/nex_alert"

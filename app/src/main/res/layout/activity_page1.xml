@@ -10,20 +10,32 @@
 
     <Button
         android:id="@+id/btn_timetable"
+        android:alpha="0.9"
         android:layout_width="409dp"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:layout_below="@+id/imageView3"
         android:layout_marginTop="-90dp"
-        android:background="@drawable/sfondosfumato"
+        android:background="@drawable/button_rounded_corners"
+        android:drawableStart="@drawable/icona_clock"
+        android:drawableLeft="@drawable/icona_clock"
+        android:padding="15dp"
+        android:gravity="start|center"
+        android:drawablePadding="20dp"
         android:text="@string/Timetab"
         android:textColor="@color/colorPrimary" />
 
     <Button
         android:id="@+id/btn_events"
+        android:alpha="0.9"
         android:layout_width="409dp"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:layout_marginTop="5dp"
-        android:background="@drawable/sfondosfumato"
+        android:background="@drawable/button_rounded_corners"
+        android:drawableStart="@drawable/icona_avviso"
+        android:drawableLeft="@drawable/icona_avviso"
+        android:padding="15dp"
+        android:gravity="start|center"
+        android:drawablePadding="20dp"
         android:text="@string/avvisi"
         android:textColor="@color/colorPrimary"
         android:layout_below="@+id/btn_timetable"
@@ -33,10 +45,16 @@
 
     <Button
         android:id="@+id/btn_rooms"
+        android:alpha="0.9"
         android:layout_width="409dp"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:layout_marginTop="5dp"
-        android:background="@drawable/sfondosfumato"
+        android:background="@drawable/button_rounded_corners"
+        android:drawableStart="@drawable/icona_aula"
+        android:drawableLeft="@drawable/icona_aula"
+        android:padding="15dp"
+        android:gravity="start|center"
+        android:drawablePadding="20dp"
         android:text="@string/rooms"
         android:textColor="@color/colorPrimary"
         android:layout_below="@id/btn_events"
@@ -48,70 +66,79 @@
 
     <Button
         android:id="@+id/btn_settings"
+        android:alpha="0.9"
         android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/sfondosfumato"
+        android:layout_height="70dp"
+        android:background="@drawable/button_rounded_corners"
+        android:drawableStart="@drawable/icona_who"
+        android:drawableLeft="@drawable/icona_who"
+        android:padding="15dp"
+        android:gravity="start|center"
+        android:drawablePadding="20dp"
         android:text="@string/who"
         android:layout_marginTop="5dp"
         android:textColor="@color/colorPrimary"
         android:layout_below="@+id/btn_rooms"/>
+
     <Button
         android:id="@+id/btn_where"
+        android:alpha="0.9"
         android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/sfondosfumato"
+        android:layout_height="70dp"
+        android:background="@drawable/button_rounded_corners"
+        android:drawableStart="@drawable/icona_location"
+        android:drawableLeft="@drawable/icona_location"
+        android:padding="15dp"
+        android:gravity="start|center"
+        android:drawablePadding="20dp"
         android:text="@string/where"
         android:layout_marginTop="5dp"
         android:textColor="@color/colorPrimary"
         android:layout_below="@+id/btn_settings"/>
 
+    <Button
+        android:id="@+id/btn_insta"
+        android:alpha="0.9"
+        android:layout_width="409dp"
+        android:layout_height="70dp"
+        android:background="@drawable/button_rounded_corners"
+        android:drawableStart="@drawable/icona_insta"
+        android:drawableLeft="@drawable/icona_who"
+        android:padding="15dp"
+        android:gravity="start|center"
+        android:drawablePadding="20dp"
+        android:text="@string/insta"
+        android:onClick="instagram_link"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/btn_where"/>
+
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="323dp"
-        android:layout_height="275dp"
+        android:alpha="0.9"
+        android:layout_width="239dp"
+        android:layout_height="142dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="68dp"
         android:contentDescription="@android:string/ok"
-        android:layout_centerHorizontal="true"
         app:layout_constraintBottom_toTopOf="@+id/btn_events"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/logo_aula_studio" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="41dp"
-        android:layout_height="33dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
+    <Button
+        android:id="@+id/retbtn"
+        style="?borderlessButtonStyle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginBottom="13dp"
-        android:contentDescription="@android:string/ok"
-        app:srcCompat="@drawable/logo_instagram" />
-
-    <TextView
-        android:id="@+id/ig"
-        android:layout_width="124dp"
-        android:layout_height="25dp"
-        android:clickable="false"
-        android:text="@string/instagram"
-        android:gravity="center"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/colorAccent"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="18dp"/>
-
-    <Button
-        android:layout_width="80dp"
-        android:layout_height="60dp"
-        android:id="@+id/retbtn"
-        tools:ignore="MissingConstraints"
-        android:textColor="@color/colorPrimaryDark"
-        android:background="@color/colorPrimary"
-        android:textStyle="italic|bold"
-        android:text="@string/ret"/>
-
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_back"
+        android:drawableTop="@drawable/icona_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
 </RelativeLayout>
