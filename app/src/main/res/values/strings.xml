@@ -54,4 +54,5 @@
     <string name="insta">FOLLOW US</string>
     <string name="google_maps_key">AIzaSyB7keuvuA3rAWhy4ZRtCfXmlo1ZQbehSak</string>
     <string name="desc">Ciao! Benvenuto nelle nostre aule studio! queste aule sono interamente gestite da studenti come voi e garantiscono un servizio di attività con orario settimanale variaile in base agli impegni degli studenti stessi che apriranno questa biblioteca.\n\nDaniela e Andrea sono gli sviluppatori dell\'app BYBLOS che permette ai gestori di questa aula studio di organizzare e informare tutti gli studenti interessati ad usufruire di questo servizio.</string>
+    <string name="closed">Chiusa</string>
 </resources>

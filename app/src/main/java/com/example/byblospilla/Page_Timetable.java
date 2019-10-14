@@ -112,20 +112,77 @@ public class Page_Timetable extends AppCompatActivity implements modify_timetabl
 
     @Override
     public void applyTexts1(String m1, String p1, String m2, String p2, String m3, String p3, String m4, String p4, String m5, String p5, String m6, String p6, String m7, String p7) {
-        textViewm1.setText(m1);
-        textViewp1.setText(p1);
-        textViewm2.setText(m2);
-        textViewp2.setText(p2);
-        textViewm3.setText(m3);
-        textViewp3.setText(p3);
-        textViewm4.setText(m4);
-        textViewp4.setText(p4);
-        textViewm5.setText(m5);
-        textViewp5.setText(p5);
-        textViewm6.setText(m6);
-        textViewp6.setText(p6);
-        textViewm7.setText(m7);
-        textViewp7.setText(p7);
+        if(!m1.equals("Chiusa")){
+            if(!m1.equals(""))
+                textViewm1.setText(m1);
+        }
+
+
+        if(!p1.equals("Chiusa")){
+            if (!p1.equals(""))
+                textViewp1.setText(p1);
+        }
+
+        if(!m2.equals("Chiusa")){
+            if (!p2.equals(""))
+                textViewm2.setText(m2);
+        }
+
+        if(!p2.equals("Chiusa")){
+            if (!p2.equals(""))
+                textViewp2.setText(p2);
+        }
+
+        if(!m3.equals("Chiusa")){
+            if (!m3.equals(""))
+                textViewm3.setText(m3);
+        }
+
+        if(!p3.equals("Chiusa")){
+            if (!p3.equals(""))
+                textViewp3.setText(p3);
+        }
+
+        if(!m4.equals("Chiusa")){
+            if (!m4.equals(""))
+                textViewm4.setText(m4);
+        }
+
+        if(!p4.equals("Chiusa")){
+            if (!p4.equals(""))
+                textViewp4.setText(p4);
+        }
+
+        if(!m5.equals("Chiusa")){
+            if (!m5.equals(""))
+                textViewm5.setText(m5);
+        }
+
+        if(!p5.equals("Chiusa")){
+            if (!p5.equals(""))
+                textViewp5.setText(p5);
+        }
+
+        if(!m6.equals("Chiusa")){
+            if (!m6.equals(""))
+                textViewm6.setText(m6);
+        }
+
+        if(!p6.equals("Chiusa")){
+            if (!p6.equals(""))
+                textViewp6.setText(p6);
+        }
+
+        if(!m7.equals("Chiusa")){
+            if (!m7.equals(""))
+                textViewm7.setText(m7);
+        }
+
+        if(!p7.equals("Chiusa")){
+            if (!p7.equals(""))
+                textViewp7.setText(p7);
+        }
+
     }
 
     public void openDialog(){
