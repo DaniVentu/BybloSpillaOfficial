@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/imageView"
         android:layout_marginTop="179dp"
-        android:text="@string/description"
+        android:text="@string/desc"
         android:textColor="@color/colorAccent" />
 
 
