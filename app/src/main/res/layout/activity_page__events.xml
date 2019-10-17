@@ -58,6 +58,7 @@
     <TextView
         android:id="@+id/editText1"
         android:layout_width="250dp"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_height="50dp"
         android:layout_below="@+id/textAvvisi"
         android:layout_centerHorizontal="true"
@@ -65,7 +66,7 @@
         android:drawableStart="@drawable/icona_puntina"
         android:drawableLeft="@drawable/icona_puntina"
         android:gravity="center"
-        android:text="@string/nex_alert" />
+        android:hint="@string/nex_alert" />
 
     <TextView
         android:id="@+id/editText2"
@@ -73,6 +74,7 @@
         android:layout_height="50dp"
         android:layout_below="@+id/editText1"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_marginTop="20dp"
         android:hint="@string/nex_alert"
         android:text=""
@@ -86,6 +88,7 @@
         android:layout_height="50dp"
         android:layout_below="@+id/editText2"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_marginTop="20dp"
         android:hint="@string/nex_alert"
         android:text=""
@@ -104,6 +107,7 @@
         android:text=""
         android:gravity="center"
         android:drawableStart="@drawable/icona_puntina"
+        android:textColor="@color/colorPrimaryDark"
         android:drawableLeft="@drawable/icona_puntina"/>
 
     <TextView
@@ -116,6 +120,7 @@
         android:hint="@string/nex_alert"
         android:text=""
         android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
         android:drawableStart="@drawable/icona_puntina"
         android:drawableLeft="@drawable/icona_puntina"/>
 
