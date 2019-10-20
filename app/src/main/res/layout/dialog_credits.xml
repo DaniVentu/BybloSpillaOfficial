@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -29,25 +30,29 @@
         android:text="@string/promo"
         android:textColor="@color/colorAccent"
         android:textSize="18sp"
-        android:textStyle="italic"/>
+        app:fontFamily="@font/body"
+        />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/caffe"
         android:layout_centerHorizontal="true"
+        app:fontFamily="@font/body"
         android:text="@string/caffè"
         android:gravity="center"
         android:textSize="16sp"
         android:layout_below="@+id/desccredists"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="60dp"
-        android:background="@color/colorPrimaryDark"
+        android:background="@drawable/button_rounded"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:textColor="@color/colorPrimary"
         android:layout_marginStart="60dp" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/spritz"
+        app:fontFamily="@font/body"
         android:text="@string/spritz"
         android:gravity="center"
         android:textSize="16sp"
@@ -55,9 +60,11 @@
         android:layout_below="@+id/caffe"
         android:layout_marginLeft="60dp"
         android:layout_marginTop="20dp"
-        android:background="@color/colorPrimaryDark"
+        android:background="@drawable/button_rounded"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:textColor="@color/colorPrimary"
         android:layout_marginStart="60dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -66,9 +73,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:gravity="center"
+        app:fontFamily="@font/body"
         android:text="@string/viewpromo"
         android:textColor="@color/colorAccent"
         android:textSize="18sp"
-        android:textStyle="italic"/>
+        />
 
 </RelativeLayout>

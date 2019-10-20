@@ -143,6 +143,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
+                    app:fontFamily="@font/body"
                     android:text="@string/studio1_1"
                     android:textColor="@color/colorWhite"
                     android:textSize="14sp"></TextView>
@@ -192,6 +193,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
+                    app:fontFamily="@font/body"
                     android:text="@string/silenzio1_1"
                     android:textColor="@color/colorWhite"
                     android:textSize="14sp"></TextView>
@@ -241,6 +243,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
+                    app:fontFamily="@font/body"
                     android:text="@string/sociale1_1"
                     android:textColor="@color/colorWhite"
                     android:textSize="14sp"></TextView>
@@ -254,12 +257,12 @@
             android:layout_below="@id/card4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
             android:layout_marginBottom="20dp"
-            android:background="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_rounded"
+            android:backgroundTint="@color/colorPrimaryDark"
             android:text="@string/credits"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimary"
             android:textStyle="bold" />
 
     </RelativeLayout>
