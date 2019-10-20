@@ -6,7 +6,7 @@
         android:drawable="@drawable/back"
         android:width="25dp"
         android:height="25dp"
-        android:scaleGravity="center"
+        android:scaleGravity="center_horizontal"
         android:top="10dp"
         />
 

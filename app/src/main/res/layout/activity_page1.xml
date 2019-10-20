@@ -121,8 +121,8 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="239dp"
-        android:layout_height="200dp"
+        android:layout_width="242dp"
+        android:layout_height="171dp"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="68dp"
         android:contentDescription="@android:string/ok"
@@ -137,10 +137,6 @@
         style="?borderlessButtonStyle"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/button_back"
         android:drawableTop="@drawable/icona_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

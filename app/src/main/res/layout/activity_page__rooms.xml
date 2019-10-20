@@ -1,43 +1,160 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    android:padding="10dp"
-    tools:context=".Page_Rooms">
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="271dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginRight="70dp"
-        android:gravity="center|center_vertical"
-        android:text="@string/rooms"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:background="@drawable/sfondosfumato"
+    android:padding="5dp">
 
     <Button
         android:id="@+id/retbtn"
         style="?borderlessButtonStyle"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/button_back"
         android:drawableTop="@drawable/icona_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/rooms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/title_pro"
+        android:text="@string/rooms"
+        android:layout_toRightOf="@id/retbtn"
+        android:textColor="@color/colorWhite"
+        android:textSize="35sp"
+        tools:targetApi="jelly_bean"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardIcone"
+        android:layout_width="190dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="#732648"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/clima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:contentDescription="@string/clima"
+                app:srcCompat="@drawable/clima" />
+
+            <ImageView
+                android:id="@+id/wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@id/clima"
+                android:layout_toRightOf="@id/clima"
+                android:contentDescription="@string/wifi"
+                app:srcCompat="@drawable/wifi" />
+
+            <ImageView
+                android:id="@+id/presa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@id/wifi"
+                android:layout_toRightOf="@id/wifi"
+                android:contentDescription="@string/presa"
+                app:srcCompat="@drawable/presa"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardGialla"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/cardIcone"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="#F3F298">
+
+        <TextView
+            android:id="@+id/aulagialla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gialla"
+            android:layout_gravity="center_horizontal|center_vertical"
+            app:fontFamily="@font/title"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardVerde"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/cardGialla"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="#B2E0AE">
+
+        <TextView
+            android:id="@+id/aulaverde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/verde"
+            android:layout_gravity="center_horizontal|center_vertical"
+            app:fontFamily="@font/title"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/cardVerde"
+        android:layout_marginTop="25dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="#732648"
+        >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/room_description"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            app:fontFamily="@font/body"
+            android:textColor="@color/colorWhite"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
