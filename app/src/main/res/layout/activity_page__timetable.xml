@@ -71,9 +71,12 @@
         android:layout_width="389dp"
         android:layout_height="246dp"
         android:paddingLeft="10dp"
+        android:layout_marginTop="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/orario">
+        app:layout_constraintTop_toBottomOf="@+id/orario"
+        android:paddingStart="10dp"
+        tools:ignore="RtlSymmetry">
 
         <TableRow
             android:id="@+id/r1"
@@ -94,7 +97,7 @@
                 android:gravity="start"
                 android:text="@string/Mattime"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -104,7 +107,7 @@
                 android:gravity="start"
                 android:text="@string/pomtime"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
         </TableRow>
 
@@ -121,7 +124,7 @@
                 android:gravity="center"
                 android:text="@string/day1"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -129,7 +132,7 @@
                 android:layout_width="160dp"
                 android:layout_height="30dp"
                 android:gravity="center"
-                android:text=""
+                android:text="@string/closed"
                 android:textColor="@color/colorPrimaryDark" />
 
             <TextView
@@ -137,7 +140,7 @@
                 android:layout_width="160dp"
                 android:layout_height="30dp"
                 android:gravity="center"
-                android:text=""
+                android:text="@string/closed"
                 android:textColor="@color/colorPrimaryDark" />
         </TableRow>
 
@@ -154,7 +157,7 @@
                 android:gravity="center"
                 android:text="@string/day2"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -162,7 +165,7 @@
                 android:layout_width="160dp"
                 android:layout_height="30dp"
                 android:gravity="center"
-                android:text=""
+                android:text="@string/closed"
                 android:textColor="@color/colorPrimaryDark" />
 
             <TextView
@@ -170,7 +173,7 @@
                 android:layout_width="160dp"
                 android:layout_height="30dp"
                 android:gravity="center"
-                android:text=""
+                android:text="@string/closed"
                 android:textColor="@color/colorPrimaryDark" />
         </TableRow>
 
@@ -187,7 +190,7 @@
                 android:gravity="center"
                 android:text="@string/day3"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -195,7 +198,7 @@
                 android:layout_width="160dp"
                 android:layout_height="30dp"
                 android:gravity="center"
-                android:text=""
+                android:text="@string/closed"
                 android:textColor="@color/colorPrimaryDark" />
 
             <TextView
@@ -203,7 +206,7 @@
                 android:layout_width="160dp"
                 android:layout_height="30dp"
                 android:gravity="center"
-                android:text=""
+                android:text="@string/closed"
                 android:textColor="@color/colorPrimaryDark" />
         </TableRow>
 
@@ -220,7 +223,7 @@
                 android:gravity="center"
                 android:text="@string/day4"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -228,7 +231,7 @@
                 android:layout_width="160dp"
                 android:layout_height="30dp"
                 android:gravity="center"
-                android:text=""
+                android:text="@string/closed"
                 android:textColor="@color/colorPrimaryDark" />
 
             <TextView
@@ -236,7 +239,7 @@
                 android:layout_width="160dp"
                 android:layout_height="30dp"
                 android:gravity="center"
-                android:text=""
+                android:text="@string/closed"
                 android:textColor="@color/colorPrimaryDark" />
         </TableRow>
 
@@ -253,7 +256,7 @@
                 android:gravity="center"
                 android:text="@string/day5"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -261,7 +264,7 @@
                 android:layout_width="160dp"
                 android:layout_height="30dp"
                 android:gravity="center"
-                android:text=""
+                android:text="@string/closed"
                 android:textColor="@color/colorPrimaryDark" />
 
             <TextView
@@ -269,7 +272,7 @@
                 android:layout_width="160dp"
                 android:layout_height="30dp"
                 android:gravity="center"
-                android:text=""
+                android:text="@string/closed"
                 android:textColor="@color/colorPrimaryDark" />
         </TableRow>
 
@@ -286,7 +289,7 @@
                 android:gravity="center"
                 android:text="@string/day6"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -294,7 +297,7 @@
                 android:layout_width="160dp"
                 android:layout_height="30dp"
                 android:gravity="center"
-                android:text=""
+                android:text="@string/closed"
                 android:textColor="@color/colorPrimaryDark" />
 
             <TextView
@@ -302,7 +305,7 @@
                 android:layout_width="160dp"
                 android:layout_height="30dp"
                 android:gravity="center"
-                android:text=""
+                android:text="@string/closed"
                 android:textColor="@color/colorPrimaryDark" />
         </TableRow>
 
@@ -319,7 +322,7 @@
                 android:gravity="center"
                 android:text="@string/day7"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -327,7 +330,7 @@
                 android:layout_width="160dp"
                 android:layout_height="30dp"
                 android:gravity="center"
-                android:text=""
+                android:text="@string/closed"
                 android:textColor="@color/colorPrimaryDark" />
 
             <TextView
@@ -335,7 +338,7 @@
                 android:layout_width="160dp"
                 android:layout_height="30dp"
                 android:gravity="center"
-                android:text=""
+                android:text="@string/closed"
                 android:textColor="@color/colorPrimaryDark" />
         </TableRow>
 

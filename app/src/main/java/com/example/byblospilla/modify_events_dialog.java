@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
 
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatDialogFragment;
 
@@ -35,10 +36,13 @@ public class modify_events_dialog extends AppCompatDialogFragment {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         String modifica = editTextModifica.getText().toString();
+
+
                         listener.applyTexts(modifica);
                     }
                 });
         editTextModifica = view.findViewById(R.id.editevents);
+
 
         return builder.create();
 

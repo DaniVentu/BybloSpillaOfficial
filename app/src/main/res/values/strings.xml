@@ -62,4 +62,7 @@
     <string name="sociale1_1">Nonostante il silenzio sia molto importante nel momento dello studio, è altrettanto essenziale il confronto se lo studio avviene con i propri colleghi universitari, proprio per questo motivo l\'Aula Studio Byblos offre la possibilità a chi desidera parlare a voce alta di trasferirsi in un\' aula adiacente (Aula Gialla) in cui è possibile parlare a voce alta, anche se è sempre gradita una certa discrezione.</string>
 
     <string name="google_maps_key">AIzaSyB7keuvuA3rAWhy4ZRtCfXmlo1ZQbehSak</string>
+    <string name="desc">Ciao! Benvenuto/a nelle nostre aule studio! queste aule sono interamente gestite da studenti come voi e garantiscono un servizio di attività con orario settimanale variabile stabilito in base alla possibilità degli studenti che le gestiscono, di poterla aprire.\n\nDaniela e Andrea sono gli sviluppatori dell\'app BYBLOS che permette ai gestori di questa aula studio di organizzare e informare tutti gli studenti interessati ad usufruire di questo servizio.</string>
+    <string name="closed">Chiusa</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
