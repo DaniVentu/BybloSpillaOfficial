@@ -1,58 +1,272 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    android:padding="10dp"
-    tools:context=".Page_Info">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/sfondosfumato">
 
-    <ImageView
-        android:id="@+id/imageView"
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="250dp"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true"
-        app:srcCompat="@drawable/logo_noscritta"
-        tools:ignore="ContentDescription" />
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/desc_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageView"
-        android:textSize="18sp"
-        android:layout_marginTop="179dp"
-        android:text="@string/desc"
-        android:textColor="@color/colorAccent" />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_toRightOf="@id/retbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/title_pro"
+            android:text="@string/mission"
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp"
+            tools:targetApi="jelly_bean"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="387dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="15dp"
+            app:cardBackgroundColor="#732648"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/studio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/icon_s"
+                    android:drawableLeft="@drawable/icon_s"
+                    android:drawingCacheQuality="high"
+                    app:fontFamily="@font/title"
+                    android:gravity="center"
+                    android:text="@string/studio"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp" />
+
+                <TextView
+                    android:id="@+id/silenzio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/studio"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/icon_s"
+                    android:drawableLeft="@drawable/icon_s"
+                    app:fontFamily="@font/title"
+                    android:gravity="center"
+                    android:text="@string/silenzio"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp" />
+
+                <TextView
+                    android:id="@+id/sociale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/silenzio"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:drawableStart="@drawable/icon_s"
+                    android:drawableLeft="@drawable/icon_s"
+                    app:fontFamily="@font/title"
+                    android:gravity="center"
+                    android:text="@string/sociale"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_below="@id/card1"
+            android:layout_width="387dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            app:cardBackgroundColor="#732648"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/studio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableStart="@drawable/icon_s"
+                    android:drawableLeft="@drawable/icon_s"
+                    app:fontFamily="@font/title"
+                    android:gravity="center"
+                    android:text="@string/studio"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:id="@+id/studio1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/studio1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/studio1_1"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"></TextView>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
 
 
-    <Button
-        android:id="@+id/retbtn"
-        style="?borderlessButtonStyle"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/button_back"
-        android:drawableTop="@drawable/icona_back"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
+            android:layout_below="@id/card2"
+            android:layout_width="387dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            app:cardBackgroundColor="#732648"
+            app:cardCornerRadius="8dp">
 
-    <Button
-        android:id="@+id/credits"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
-        android:background="@color/colorPrimary"
-        android:text="@string/credits"
-        android:textColor="@color/colorPrimaryDark"
-        android:textStyle="bold" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/silenzio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableStart="@drawable/icon_s"
+                    android:drawableLeft="@drawable/icon_s"
+                    app:fontFamily="@font/title"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/silenzio"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/silenzio1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/silenzio1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/silenzio1_1"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"></TextView>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card4"
+            android:layout_below="@id/card3"
+            android:layout_width="387dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="25dp"
+            app:cardBackgroundColor="#732648"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sociale1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableStart="@drawable/icon_s"
+                    android:drawableLeft="@drawable/icon_s"
+                    app:fontFamily="@font/title"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/sociale"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/sociale1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sociale1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/sociale1_1"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"></TextView>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
 
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/retbtn"
+            style="?borderlessButtonStyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_back"
+            android:drawableTop="@drawable/icona_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/credits"
+            android:layout_below="@id/card4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/credits"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
