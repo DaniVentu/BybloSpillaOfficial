@@ -52,5 +52,14 @@
     <string name="hintevent">Scrivi qui</string>
     <string name="nex_alert">Nessun Avviso</string>
     <string name="insta">FOLLOW US</string>
+
+    <string name="mission">Our Mission</string>
+    <string name="studio">tudy</string>
+    <string name="studio1_1">Uno degli obiettivi principali della Byblos è quello di creare un ambiente adatto allo studio che possa ritenersi una valida alternativa alle biblioteche comunali ed universitarie che tendono a rimanere chiuse proprio nei periodi in prossimità delle sessioni di esami; inoltre l\'Aula Studio Byblos si impegna a garantire anche aperture serali.</string>
+    <string name="silenzio">ilence</string>
+    <string name="silenzio1_1">Il silenzio è una delle caratteristiche principali che ogni biblioteca o aula destinata allo studio dovrebbe in qualche modo garantire. Tuttavia, soprattutto nelle biblioteche in cui è previsto il prestito e la restituzione di libri, non è raro trovare bambini che insieme ai genitori vengono a cercare libri e di conseguenza creano confusione. L\'Aula Studio Byblos è un luogo dedicato esclusivamente allo studio, pertanto non possono capitare disagi di questo genere.</string>
+    <string name="sociale">ocial</string>
+    <string name="sociale1_1">Nonostante il silenzio sia molto importante nel momento dello studio, è altrettanto essenziale il confronto se lo studio avviene con i propri colleghi universitari, proprio per questo motivo l\'Aula Studio Byblos offre la possibilità a chi desidera parlare a voce alta di trasferirsi in un\' aula adiacente (Aula Gialla) in cui è possibile parlare a voce alta, anche se è sempre gradita una certa discrezione.</string>
+
     <string name="google_maps_key">AIzaSyB7keuvuA3rAWhy4ZRtCfXmlo1ZQbehSak</string>
 </resources>
