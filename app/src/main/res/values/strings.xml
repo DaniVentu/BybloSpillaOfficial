@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <string name="app_name">BybloSpilla</string>
     <string name="app_name2">Byblos</string>
     <string name="Password">Password</string>
@@ -61,7 +61,7 @@
     <string name="gialla">Aula\nGialla</string>
     <string name="verde">Aula\nVerde</string>
     <string name="room_description">La Byblos mette a disposizione due Aule, per un totale di \50 posti a sedere. In entrambe le aule sono presenti delle prese elettriche ed è possibile accedere al Wi-Fi. Inoltre sia l\' Aula Verde (nonchè aula silenziosa) sia l\' Aula Gialla sono climatizzate per garantire un ambiente adeguato sia in inverno che in estate.</string>
-
+    <string name="timetable">Timetable</string>
 
     <string name="google_maps_key">AIzaSyB7keuvuA3rAWhy4ZRtCfXmlo1ZQbehSak</string>
     <string name="desc">Ciao! Benvenuto/a nelle nostre aule studio! queste aule sono interamente gestite da studenti come voi e garantiscono un servizio di attività con orario settimanale variabile stabilito in base alla possibilità degli studenti che le gestiscono, di poterla aprire.\n\nDaniela e Andrea sono gli sviluppatori dell\'app BYBLOS che permette ai gestori di questa aula studio di organizzare e informare tutti gli studenti interessati ad usufruire di questo servizio.</string>

@@ -11,6 +11,9 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class Page_Events extends AppCompatActivity implements modify_events_dialog.modify_events_dialog_Listener{
 
     private TextView textView1;

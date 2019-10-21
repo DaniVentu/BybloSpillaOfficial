@@ -1,357 +1,355 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    android:padding="10dp"
+    android:background="@drawable/sfondosfumato"
+    android:padding="5dp"
     tools:context=".Page_Timetable">
 
-    <TextView
-        android:id="@+id/orario"
-        android:layout_width="309dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:bufferType="normal"
-        android:gravity="center"
-        android:text="@string/orset"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:autoSizeTextType="none"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/orario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="19dp"
+            android:fontFamily="@font/title_pro"
+            android:text="@string/timetable"
+            android:layout_toRightOf="@id/retbtn"
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp"
+            tools:targetApi="jelly_bean"
+            android:layout_toEndOf="@id/retbtn" />
 
 
-    <CalendarView
-        android:id="@+id/calendarView"
-        style="@android:style/Widget.DeviceDefault.CalendarView"
-        android:layout_width="357dp"
-        android:layout_height="288dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="23dp"
-        android:background="@color/colorPrimary"
-        android:focusedMonthDateColor="@color/colorAccent"
-        android:selectedWeekBackgroundColor="@color/colorPrimaryDark"
-        android:theme="@style/AppTheme"
-        android:unfocusedMonthDateColor="@color/colorPrimaryDark"
-        android:visibility="visible"
-        android:weekNumberColor="@color/colorPrimaryDark"
-        android:weekSeparatorLineColor="@color/colorPrimaryDark"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:visibility="visible" />
+        <CalendarView
+            android:id="@+id/calendarView"
+            style="@android:style/Widget.DeviceDefault.CalendarView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orario"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="32dp"
+            android:visibility="visible"
+            tools:visibility="visible" />
 
-    <Button
-        android:id="@+id/retbtn"
-        style="?borderlessButtonStyle"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:drawableTop="@drawable/icona_back"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/retbtn"
+            style="?borderlessButtonStyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:drawableTop="@drawable/icona_back"
+            android:drawableTint="@color/colorWhite"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            tools:targetApi="m"/>
 
-    <TableLayout
-        android:id="@+id/TL"
-        android:layout_width="389dp"
-        android:layout_height="246dp"
-        android:paddingLeft="10dp"
-        android:layout_marginTop="35dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/orario"
-        android:paddingStart="10dp"
-        tools:ignore="RtlSymmetry">
+        <TableLayout
+            android:id="@+id/TL"
+            android:layout_width="389dp"
+            android:layout_height="246dp"
+            android:layout_below="@id/calendarView"
+            android:layout_marginTop="58dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orario"
+            tools:ignore="RtlSymmetry">
 
-        <TableRow
-            android:id="@+id/r1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:ignore="UselessParent">
+            <TableRow
+                android:id="@+id/r1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessParent">
 
-            <TextView
-                android:id="@+id/blanc"
-                android:layout_width="80dp"
-                android:layout_height="30dp"
-                android:gravity="center" />
+                <TextView
+                    android:id="@+id/blanc"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:gravity="center" />
 
-            <TextView
-                android:id="@+id/mattino"
-                android:layout_width="160dp"
-                android:layout_height="30dp"
-                android:gravity="start"
-                android:text="@string/Mattime"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/mattino"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/title"
+                    android:gravity="center"
+                    android:text="@string/Mattime"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    android:textStyle="bold" tools:targetApi="jelly_bean"/>
 
-            <TextView
-                android:id="@+id/pomeriggio"
-                android:layout_width="160dp"
-                android:layout_height="30dp"
-                android:gravity="start"
-                android:text="@string/pomtime"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="15sp"
-                android:textStyle="bold" />
-        </TableRow>
+                <TextView
+                    android:id="@+id/pomeriggio"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:fontFamily="@font/title"
+                    android:gravity="center"
+                    android:text="@string/pomtime"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    android:textStyle="bold" tools:targetApi="jelly_bean"/>
+            </TableRow>
 
-        <TableRow
-            android:id="@+id/r2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:ignore="UselessParent">
+            <TableRow
+                android:id="@+id/r2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessParent">
 
-            <TextView
-                android:id="@+id/lun"
-                android:layout_width="80dp"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:text="@string/day1"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/lun"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/day1"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/m1"
-                android:layout_width="160dp"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:text="@string/closed"
-                android:textColor="@color/colorPrimaryDark" />
+                <TextView
+                    android:id="@+id/m1"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/closed"
+                    android:textColor="@color/colorWhite" />
 
-            <TextView
-                android:id="@+id/p1"
-                android:layout_width="160dp"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:text="@string/closed"
-                android:textColor="@color/colorPrimaryDark" />
-        </TableRow>
+                <TextView
+                    android:id="@+id/p1"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/closed"
+                    android:textColor="@color/colorWhite" />
+            </TableRow>
 
-        <TableRow
-            android:id="@+id/r3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:ignore="UselessParent">
+            <TableRow
+                android:id="@+id/r3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessParent">
 
-            <TextView
-                android:id="@+id/mar"
-                android:layout_width="80dp"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:text="@string/day2"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/mar"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/day2"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/m2"
-                android:layout_width="160dp"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:text="@string/closed"
-                android:textColor="@color/colorPrimaryDark" />
+                <TextView
+                    android:id="@+id/m2"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/closed"
+                    android:textColor="@color/colorWhite" />
 
-            <TextView
-                android:id="@+id/p2"
-                android:layout_width="160dp"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:text="@string/closed"
-                android:textColor="@color/colorPrimaryDark" />
-        </TableRow>
+                <TextView
+                    android:id="@+id/p2"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/closed"
+                    android:textColor="@color/colorWhite" />
+            </TableRow>
 
-        <TableRow
-            android:id="@+id/r4"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:ignore="UselessParent">
+            <TableRow
+                android:id="@+id/r4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessParent">
 
-            <TextView
-                android:id="@+id/mer"
-                android:layout_width="80dp"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:text="@string/day3"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/mer"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/day3"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/m3"
-                android:layout_width="160dp"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:text="@string/closed"
-                android:textColor="@color/colorPrimaryDark" />
+                <TextView
+                    android:id="@+id/m3"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/closed"
+                    android:textColor="@color/colorWhite" />
 
-            <TextView
-                android:id="@+id/p3"
-                android:layout_width="160dp"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:text="@string/closed"
-                android:textColor="@color/colorPrimaryDark" />
-        </TableRow>
+                <TextView
+                    android:id="@+id/p3"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/closed"
+                    android:textColor="@color/colorWhite" />
+            </TableRow>
 
-        <TableRow
-            android:id="@+id/r5"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:ignore="UselessParent">
+            <TableRow
+                android:id="@+id/r5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessParent">
 
-            <TextView
-                android:id="@+id/gio"
-                android:layout_width="80dp"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:text="@string/day4"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/gio"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/day4"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/m4"
-                android:layout_width="160dp"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:text="@string/closed"
-                android:textColor="@color/colorPrimaryDark" />
+                <TextView
+                    android:id="@+id/m4"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/closed"
+                    android:textColor="@color/colorWhite" />
 
-            <TextView
-                android:id="@+id/p4"
-                android:layout_width="160dp"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:text="@string/closed"
-                android:textColor="@color/colorPrimaryDark" />
-        </TableRow>
+                <TextView
+                    android:id="@+id/p4"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/closed"
+                    android:textColor="@color/colorWhite" />
+            </TableRow>
 
-        <TableRow
-            android:id="@+id/r6"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:ignore="UselessParent">
+            <TableRow
+                android:id="@+id/r6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessParent">
 
-            <TextView
-                android:id="@+id/ven"
-                android:layout_width="80dp"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:text="@string/day5"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/ven"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/day5"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/m5"
-                android:layout_width="160dp"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:text="@string/closed"
-                android:textColor="@color/colorPrimaryDark" />
+                <TextView
+                    android:id="@+id/m5"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/closed"
+                    android:textColor="@color/colorWhite" />
 
-            <TextView
-                android:id="@+id/p5"
-                android:layout_width="160dp"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:text="@string/closed"
-                android:textColor="@color/colorPrimaryDark" />
-        </TableRow>
+                <TextView
+                    android:id="@+id/p5"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/closed"
+                    android:textColor="@color/colorWhite" />
+            </TableRow>
 
-        <TableRow
-            android:id="@+id/r7"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:ignore="UselessParent">
+            <TableRow
+                android:id="@+id/r7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessParent">
 
-            <TextView
-                android:id="@+id/sab"
-                android:layout_width="80dp"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:text="@string/day6"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/sab"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/day6"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/m6"
-                android:layout_width="160dp"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:text="@string/closed"
-                android:textColor="@color/colorPrimaryDark" />
+                <TextView
+                    android:id="@+id/m6"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/closed"
+                    android:textColor="@color/colorWhite" />
 
-            <TextView
-                android:id="@+id/p6"
-                android:layout_width="160dp"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:text="@string/closed"
-                android:textColor="@color/colorPrimaryDark" />
-        </TableRow>
+                <TextView
+                    android:id="@+id/p6"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/closed"
+                    android:textColor="@color/colorWhite" />
+            </TableRow>
 
-        <TableRow
-            android:id="@+id/r8"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:ignore="UselessParent">
+            <TableRow
+                android:id="@+id/r8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessParent">
 
-            <TextView
-                android:id="@+id/dom"
-                android:layout_width="80dp"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:text="@string/day7"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/dom"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/day7"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/m7"
-                android:layout_width="160dp"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:text="@string/closed"
-                android:textColor="@color/colorPrimaryDark" />
+                <TextView
+                    android:id="@+id/m7"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/closed"
+                    android:textColor="@color/colorWhite" />
 
-            <TextView
-                android:id="@+id/p7"
-                android:layout_width="160dp"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:text="@string/closed"
-                android:textColor="@color/colorPrimaryDark" />
-        </TableRow>
+                <TextView
+                    android:id="@+id/p7"
+                    android:layout_width="160dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/closed"
+                    android:textColor="@color/colorWhite" />
+            </TableRow>
 
-    </TableLayout>
+        </TableLayout>
 
-    <Button
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:id="@+id/btnShowDialog"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/button_back"
-        android:drawableTop="@drawable/icona_plus"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        <Button
+            android:id="@+id/btnShowDialog"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:drawableTop="@drawable/icona_plus"
+            android:drawableTint="@color/colorWhite"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            tools:targetApi="m"/>
 
+    </RelativeLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
