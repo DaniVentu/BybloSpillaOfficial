@@ -28,14 +28,15 @@
         android:fontFamily="@font/title_pro"
         android:text="@string/rooms"
         android:layout_toRightOf="@id/retbtn"
+        android:layout_toEndOf="@id/retbtn"
         android:textColor="@color/colorWhite"
         android:textSize="35sp"
         tools:targetApi="jelly_bean"/>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardIcone"
-        android:layout_width="190dp"
-        android:layout_height="64dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="80dp"
         android:layout_marginRight="15dp"
@@ -57,7 +58,11 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:contentDescription="@string/clima"
-                app:srcCompat="@drawable/clima" />
+                app:srcCompat="@drawable/clima"
+                android:adjustViewBounds="true"
+                android:maxWidth="20dp"
+                android:maxHeight="20dp"
+                android:scaleType="fitCenter"/>
 
             <ImageView
                 android:id="@+id/wifi"
@@ -70,7 +75,11 @@
                 android:layout_toEndOf="@id/clima"
                 android:layout_toRightOf="@id/clima"
                 android:contentDescription="@string/wifi"
-                app:srcCompat="@drawable/wifi" />
+                app:srcCompat="@drawable/wifi"
+                android:adjustViewBounds="true"
+                android:maxWidth="20dp"
+                android:maxHeight="20dp"
+                android:scaleType="fitCenter"/>
 
             <ImageView
                 android:id="@+id/presa"
@@ -85,7 +94,11 @@
                 android:layout_toEndOf="@id/wifi"
                 android:layout_toRightOf="@id/wifi"
                 android:contentDescription="@string/presa"
-                app:srcCompat="@drawable/presa"/>
+                app:srcCompat="@drawable/presa"
+                android:adjustViewBounds="true"
+                android:maxWidth="20dp"
+                android:maxHeight="20dp"
+                android:scaleType="fitCenter"/>
 
         </RelativeLayout>
 
