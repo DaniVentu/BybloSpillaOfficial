@@ -30,7 +30,8 @@
         android:layout_toRightOf="@id/retbtn"
         android:textColor="@color/colorWhite"
         android:textSize="35sp"
-        tools:targetApi="jelly_bean"/>
+        tools:targetApi="jelly_bean"
+        android:layout_toEndOf="@id/retbtn" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardIcone"
@@ -106,6 +107,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/gialla"
+            android:gravity="center"
             android:layout_gravity="center_horizontal|center_vertical"
             app:fontFamily="@font/title"/>
     </androidx.cardview.widget.CardView>
@@ -125,6 +127,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/verde"
+            android:gravity="center"
             android:layout_gravity="center_horizontal|center_vertical"
             app:fontFamily="@font/title"/>
     </androidx.cardview.widget.CardView>

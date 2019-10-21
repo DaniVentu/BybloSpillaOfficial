@@ -23,7 +23,8 @@
             android:text="@string/mission"
             android:textColor="@color/colorWhite"
             android:textSize="25sp"
-            tools:targetApi="jelly_bean"/>
+            tools:targetApi="jelly_bean"
+            android:layout_toEndOf="@id/retbtn" />
 
         <Button
             android:id="@+id/retbtn"
@@ -35,7 +36,7 @@
             android:drawableTint="@color/colorWhite"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints,UnusedAttribute" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card1"
@@ -263,7 +264,8 @@
             android:backgroundTint="@color/colorPrimaryDark"
             android:text="@string/credits"
             android:textColor="@color/colorPrimary"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="UnusedAttribute" />
 
     </RelativeLayout>
 
