@@ -28,7 +28,6 @@
         android:fontFamily="@font/title_pro"
         android:text="@string/rooms"
         android:layout_toRightOf="@id/retbtn"
-        android:layout_toEndOf="@id/retbtn"
         android:textColor="@color/colorWhite"
         android:textSize="35sp"
         tools:targetApi="jelly_bean"
