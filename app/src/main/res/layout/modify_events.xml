@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/sfondosfumato"
     android:padding="40dp">
 
     <TextView
@@ -14,7 +14,7 @@
         android:text="@string/avviso"
         android:layout_centerHorizontal="true"
         android:textSize="24sp"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/colorWhite"
         android:textStyle="bold" />
     <EditText
         android:layout_width="match_parent"
@@ -24,6 +24,8 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/textevents"
         android:hint="@string/hintevent"
+        android:textColorHint="@color/colorWhite"
+        android:textColor="@color/colorWhite"
         tools:ignore="TextFields"
         android:importantForAutofill="no" />
 

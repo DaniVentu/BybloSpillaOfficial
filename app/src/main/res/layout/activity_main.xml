@@ -65,14 +65,21 @@
     <Button
         android:id="@+id/accessbutton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_insta"
-        android:layout_marginTop="20dp"
+        android:layout_height="70dp"
         android:background="@drawable/button_rounded_corners"
         android:text="@string/access"
         android:textAllCaps="true"
         android:textColor="@color/colorPrimary"
         android:textSize="14sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/btn_settings"
+        app:srcCompat="@drawable/new_logo_transparent" />
 
 </RelativeLayout>

@@ -22,9 +22,9 @@
     <application
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup_descriptor"
-        android:icon="@mipmap/b_logo1"
+        android:icon="@mipmap/bybloslogodark"
         android:label="@string/app_name2"
-        android:roundIcon="@mipmap/b_logo1_round"
+        android:roundIcon="@mipmap/bybloslogodark_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">

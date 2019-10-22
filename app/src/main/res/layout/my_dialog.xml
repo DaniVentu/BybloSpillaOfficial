@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
+    android:background="@drawable/sfondosfumato"
     android:padding="5dp">
 
     <TextView
@@ -15,6 +16,7 @@
         android:layout_marginTop="5dp"
         android:text="@string/admin"
         android:textSize="25sp"
+        android:textColor="@color/colorWhite"
         android:textStyle="bold" />
 
 
@@ -38,11 +40,11 @@
         android:scrollbarThumbVertical="@color/colorPrimary"
         android:scrollbarTrackHorizontal="@color/colorPrimaryDark"
         android:scrollbarTrackVertical="@color/colorPrimaryDark"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/colorWhite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ig"
-        tools:text="@string/Password" />
+        tools:text="@string/Password"
+        tools:ignore="UnusedAttribute" />
 
 
     <Button
@@ -50,7 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:background="@color/colorAccent"
+        android:background="@drawable/button_rounded_corners"
         android:text="@string/Login"
         android:textColor="@android:color/white" />
 </LinearLayout>

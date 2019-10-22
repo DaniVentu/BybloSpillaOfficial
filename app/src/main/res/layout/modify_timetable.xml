@@ -3,19 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/sfondosfumato"
+    android:padding="10dp"
     android:paddingTop="10dp">
 
     <TableLayout
         android:id="@+id/TL"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         tools:ignore="UselessParent">
 
         <TableRow
             android:id="@+id/r1"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             tools:ignore="UselessParent">
 
@@ -31,7 +33,7 @@
                 android:layout_height="50dp"
                 android:gravity="center"
                 android:text="@string/Mattime"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
@@ -41,14 +43,14 @@
                 android:layout_height="50dp"
                 android:gravity="center"
                 android:text="@string/pomtime"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
                 android:textSize="14sp"
                 android:textStyle="bold" />
         </TableRow>
 
         <TableRow
             android:id="@+id/r2"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             tools:ignore="UselessParent">
 
@@ -58,7 +60,7 @@
                 android:layout_height="50dp"
                 android:gravity="center"
                 android:text="@string/day1"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -70,7 +72,7 @@
                 android:importantForAutofill="no"
                 android:inputType=""
                 android:text=""
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
                 tools:ignore="LabelFor" />
 
@@ -82,14 +84,14 @@
                 android:importantForAutofill="no"
                 android:inputType=""
                 android:text=""
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
                 tools:ignore="LabelFor" />
         </TableRow>
 
         <TableRow
             android:id="@+id/r3"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             tools:ignore="UselessParent">
 
@@ -99,7 +101,7 @@
                 android:layout_height="50dp"
                 android:gravity="center"
                 android:text="@string/day2"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -111,7 +113,7 @@
                 android:importantForAutofill="no"
                 android:inputType=""
                 android:text=""
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
                 tools:ignore="LabelFor" />
 
@@ -123,14 +125,14 @@
                 android:importantForAutofill="no"
                 android:inputType=""
                 android:text=""
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
                 tools:ignore="LabelFor" />
         </TableRow>
 
         <TableRow
             android:id="@+id/r4"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             tools:ignore="UselessParent">
 
@@ -140,7 +142,7 @@
                 android:layout_height="50dp"
                 android:gravity="center"
                 android:text="@string/day3"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -152,7 +154,7 @@
                 android:importantForAutofill="no"
                 android:inputType=""
                 android:text=""
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
                 tools:ignore="LabelFor" />
 
@@ -164,14 +166,14 @@
                 android:importantForAutofill="no"
                 android:inputType=""
                 android:text=""
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
                 tools:ignore="LabelFor" />
         </TableRow>
 
         <TableRow
             android:id="@+id/r5"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             tools:ignore="UselessParent">
 
@@ -181,7 +183,7 @@
                 android:layout_height="50dp"
                 android:gravity="center"
                 android:text="@string/day4"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -193,7 +195,7 @@
                 android:importantForAutofill="no"
                 android:inputType=""
                 android:text=""
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
                 tools:ignore="LabelFor" />
 
@@ -205,14 +207,14 @@
                 android:importantForAutofill="no"
                 android:inputType=""
                 android:text=""
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
                 tools:ignore="LabelFor" />
         </TableRow>
 
         <TableRow
             android:id="@+id/r6"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="50dp"
             tools:ignore="UselessParent">
 
@@ -222,7 +224,7 @@
                 android:layout_height="50dp"
                 android:gravity="center"
                 android:text="@string/day5"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -234,7 +236,7 @@
                 android:importantForAutofill="no"
                 android:inputType=""
                 android:text=""
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
                 tools:ignore="LabelFor" />
 
@@ -246,14 +248,14 @@
                 android:importantForAutofill="no"
                 android:inputType=""
                 android:text=""
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
                 tools:ignore="LabelFor" />
         </TableRow>
 
         <TableRow
             android:id="@+id/r7"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             tools:ignore="UselessParent">
 
@@ -263,7 +265,7 @@
                 android:layout_height="50dp"
                 android:gravity="center"
                 android:text="@string/day6"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -275,7 +277,7 @@
                 android:importantForAutofill="no"
                 android:inputType=""
                 android:text=""
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
                 tools:ignore="LabelFor" />
 
@@ -287,14 +289,14 @@
                 android:importantForAutofill="no"
                 android:inputType=""
                 android:text=""
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
                 tools:ignore="LabelFor" />
         </TableRow>
 
         <TableRow
             android:id="@+id/r8"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             tools:ignore="UselessParent">
 
@@ -304,7 +306,7 @@
                 android:layout_height="50dp"
                 android:gravity="center"
                 android:text="@string/day7"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -316,7 +318,7 @@
                 android:importantForAutofill="no"
                 android:inputType=""
                 android:text=""
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
                 tools:ignore="LabelFor" />
 
@@ -328,7 +330,7 @@
                 android:importantForAutofill="no"
                 android:inputType=""
                 android:text=""
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
                 tools:ignore="LabelFor" />
         </TableRow>

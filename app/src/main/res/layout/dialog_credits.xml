@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="40dp"
-    android:background="@color/colorPrimary">
+    android:background="@drawable/sfondosfumato">
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,7 +15,7 @@
         android:textSize="36sp"
         android:gravity="center"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimary"
         android:textStyle="bold"
         android:layout_marginTop="20dp"/>
 
@@ -28,7 +28,7 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:text="@string/promo"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         app:fontFamily="@font/body"
         />
@@ -40,18 +40,19 @@
         app:fontFamily="@font/body"
         android:text="@string/caffè"
         android:gravity="center"
+        android:textStyle="bold"
         android:textSize="16sp"
         android:layout_below="@+id/desccredists"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="60dp"
-        android:background="@drawable/button_rounded"
-        android:backgroundTint="@color/colorPrimaryDark"
+        android:background="@drawable/button_rounded_corners"
         android:textColor="@color/colorPrimary"
         android:layout_marginStart="60dp" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/spritz"
+        android:textStyle="bold"
         app:fontFamily="@font/body"
         android:text="@string/spritz"
         android:gravity="center"
@@ -60,8 +61,7 @@
         android:layout_below="@+id/caffe"
         android:layout_marginLeft="60dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/button_rounded"
-        android:backgroundTint="@color/colorPrimaryDark"
+        android:background="@drawable/button_rounded_corners"
         android:textColor="@color/colorPrimary"
         android:layout_marginStart="60dp" />
 
@@ -75,7 +75,7 @@
         android:gravity="center"
         app:fontFamily="@font/body"
         android:text="@string/viewpromo"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         />
 
