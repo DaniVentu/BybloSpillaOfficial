@@ -110,6 +110,8 @@ public class Page_Events extends AppCompatActivity implements modify_events_dial
 
         textView1.setText(editEvents);
 
+
+
     }
 
 }
