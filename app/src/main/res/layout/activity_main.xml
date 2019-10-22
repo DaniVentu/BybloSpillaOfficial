@@ -1,46 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/sfondosfumato"
+    android:padding="10dp"
     android:visibility="visible"
-    android:paddingLeft="0dp"
-    android:paddingRight="0dp"
     tools:context=".MainActivity"
     tools:visibility="visible">
 
     <Button
+        android:id="@+id/btn_settings"
+        android:layout_width="409dp"
+        android:layout_height="100dp"
+        android:background="@drawable/button_rounded_corners"
+        android:drawableRight="@drawable/icona_go"
+        android:drawableEnd="@drawable/icona_go"
+        android:drawableStart="@drawable/icona_who"
+        android:drawableLeft="@drawable/icona_who"
+        android:padding="15dp"
+        android:gravity="start|center"
+        android:drawablePadding="20dp"
+        android:text="@string/who"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_above="@id/btn_where"/>
+
+    <Button
+        android:id="@+id/btn_where"
+        android:layout_centerInParent="true"
+        android:layout_width="409dp"
+        android:layout_height="100dp"
+        android:background="@drawable/button_rounded_corners"
+        android:drawableRight="@drawable/icona_go"
+        android:drawableEnd="@drawable/icona_go"
+        android:drawableStart="@drawable/icona_location"
+        android:drawableLeft="@drawable/icona_location"
+        android:padding="15dp"
+        android:gravity="start|center"
+        android:drawablePadding="20dp"
+        android:text="@string/where"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/btn_insta"
+        android:layout_width="409dp"
+        android:layout_height="100dp"
+        android:background="@drawable/button_rounded_corners"
+        android:drawableRight="@drawable/icona_go"
+        android:drawableEnd="@drawable/icona_go"
+        android:drawableStart="@drawable/icona_insta"
+        android:drawableLeft="@drawable/icona_who"
+        android:padding="15dp"
+        android:gravity="start|center"
+        android:drawablePadding="20dp"
+        android:text="@string/insta"
+        android:onClick="instagram_link"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/btn_where"/>
+
+    <Button
         android:id="@+id/accessbutton"
         android:layout_width="match_parent"
-        android:layout_height="86dp"
-        android:background="@color/colorPrimaryDark"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_insta"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_rounded_corners"
         android:text="@string/access"
         android:textAllCaps="true"
         android:textColor="@color/colorPrimary"
         android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/accessimage"
-        android:layout_width="338dp"
-        android:layout_height="583dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:contentDescription="@android:string/ok"
-        android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/accessbutton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/logo_transparent"
-        tools:srcCompat="@drawable/logo_transparent"
-        tools:visibility="visible" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

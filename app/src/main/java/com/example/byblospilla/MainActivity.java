@@ -1,6 +1,7 @@
 package com.example.byblospilla;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,11 +29,34 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        /*Creo collegamento al button chi siamo?*/
+        Button btnsetting = findViewById(R.id.btn_settings);
+        final Intent openbtn_settings = new Intent(MainActivity.this, Page_Info.class);
+        btnsetting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(openbtn_settings);
+            }
+        });
+
+        /*creo collegamento al button dove siamo*/
+        Button btnwhere = findViewById(R.id.btn_where);
+        final Intent openbtn_where = new Intent(MainActivity.this, Page_where.class);
+        btnwhere.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(openbtn_where);
+            }
+        });
 
     }
 
     /*qui posso scrivere gli altri metodi fuori dal metodo principale!*/
 
 
+    public void instagram_link(View view) {
+        Intent instagramIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://instagram.com/aulastudiobyblos?igshid=mp7ipsmcjxz8"));
+        startActivity(instagramIntent);
+    }
 
 }

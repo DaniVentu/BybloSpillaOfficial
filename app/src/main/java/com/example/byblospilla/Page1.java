@@ -15,16 +15,6 @@ public class Page1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page1);
 
-        /*Creo collegamento al button chi siamo?*/
-        Button btnsetting = findViewById(R.id.btn_settings);
-        final Intent openbtn_settings = new Intent(Page1.this, Page_Info.class);
-        btnsetting.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(openbtn_settings);
-            }
-        });
-
         /*creo collegamento al button aule*/
         Button btnrooms = findViewById(R.id.btn_rooms);
         final Intent openbtn_rooms = new Intent(Page1.this, Page_Rooms.class);
@@ -55,17 +45,6 @@ public class Page1 extends AppCompatActivity {
             }
         });
 
-
-        /*creo collegamento al button dove siamo*/
-        Button btnwhere = findViewById(R.id.btn_where);
-        final Intent openbtn_where = new Intent(Page1.this, Page_where.class);
-        btnwhere.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(openbtn_where);
-            }
-        });
-
         /* return */
         Button btnret = findViewById(R.id.retbtn);
         final Intent openret = new Intent(Page1.this, MainActivity.class);
@@ -76,10 +55,5 @@ public class Page1 extends AppCompatActivity {
             }
         });
 
-    }
-
-    public void instagram_link(View view) {
-        Intent instagramIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://instagram.com/aulastudiobyblos?igshid=mp7ipsmcjxz8"));
-        startActivity(instagramIntent);
     }
 }

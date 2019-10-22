@@ -4,7 +4,7 @@
         <shape android:shape="rectangle">
             <gradient
                 android:startColor="@color/colorPrimaryDark"
-                android:endColor="#DA527CCF"
+                android:endColor="#F05F57"
                 android:type="linear"
                 />
             <!--corners allow us to make the rounded corners button-->
