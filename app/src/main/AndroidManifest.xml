@@ -29,26 +29,18 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <!--
-             The API key for Google Maps-based APIs is defined as a string resource.
-             (See the file "res/values/google_maps_api.xml").
-             Note that the API key is linked to the encryption key used to sign the APK.
-             You need a different API key for each encryption key, including the release key that is used to
-             sign the APK for publishing.
-             You can define the keys for the debug and release targets in src/debug/ and src/release/.
-        -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".Page_where" />
-        <activity android:name=".Page_Timetable" />
-        <activity android:name=".Page_Events" />
-        <activity android:name=".Page_Rooms" />
-        <activity android:name=".Page_Settings" />
-        <activity android:name=".Page_Info" />
-        <activity android:name=".Page1" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Page_where" android:screenOrientation="locked"/>
+        <activity android:name=".Page_Timetable" android:screenOrientation="locked"/>
+        <activity android:name=".Page_Events" android:screenOrientation="locked"/>
+        <activity android:name=".Page_Rooms" android:screenOrientation="locked"/>
+        <activity android:name=".Page_Settings" android:screenOrientation="locked"/>
+        <activity android:name=".Page_Info" android:screenOrientation="locked"/>
+        <activity android:name=".Page1" android:screenOrientation="locked"/>
+        <activity android:name=".MainActivity" android:screenOrientation="locked">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
