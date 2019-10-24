@@ -62,6 +62,8 @@ public class Page1 extends AppCompatActivity {
             }
         });
 
+
+
         /* return */
         Button btnret = findViewById(R.id.retbtn);
         final Intent openret = new Intent(Page1.this, MainActivity.class);
