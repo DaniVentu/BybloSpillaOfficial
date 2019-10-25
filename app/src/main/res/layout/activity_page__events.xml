@@ -54,33 +54,35 @@
     <TextView
         android:id="@+id/editText1"
         android:layout_width="250dp"
-        android:textColor="@color/colorWhite"
         android:layout_height="50dp"
         android:layout_below="@+id/textAvvisi"
-        android:fontFamily="@font/body"
-        android:textColorHint="@color/colorWhite"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
         android:drawableStart="@drawable/icona_puntina"
         android:drawableLeft="@drawable/icona_puntina"
+        android:fontFamily="@font/body"
         android:gravity="center"
-        android:hint="@string/nex_alert" tools:targetApi="jelly_bean"/>
+        android:hint="@string/nex_alert"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorFade"
+        tools:targetApi="jelly_bean" />
 
     <TextView
         android:id="@+id/editText2"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_below="@+id/editText1"
-        android:fontFamily="@font/body"
-        android:textColorHint="@color/colorWhite"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/colorWhite"
         android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/icona_puntina"
+        android:drawableLeft="@drawable/icona_puntina"
+        android:fontFamily="@font/body"
+        android:gravity="center"
         android:hint="@string/nex_alert"
         android:text=""
-        android:gravity="center"
-        android:drawableStart="@drawable/icona_puntina"
-        android:drawableLeft="@drawable/icona_puntina" tools:targetApi="jelly_bean"/>
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorFade"
+        tools:targetApi="jelly_bean" />
 
     <TextView
         android:id="@+id/editText3"
@@ -88,47 +90,50 @@
         android:layout_height="50dp"
         android:layout_below="@+id/editText2"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/colorWhite"
-        android:fontFamily="@font/body"
-        android:textColorHint="@color/colorWhite"
         android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/icona_puntina"
+        android:drawableLeft="@drawable/icona_puntina"
+        android:fontFamily="@font/body"
+        android:gravity="center"
         android:hint="@string/nex_alert"
         android:text=""
-        android:gravity="center"
-        android:drawableStart="@drawable/icona_puntina"
-        android:drawableLeft="@drawable/icona_puntina" tools:targetApi="jelly_bean"/>
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorFade"
+        tools:targetApi="jelly_bean" />
 
     <TextView
         android:id="@+id/editText4"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_below="@+id/editText3"
-        android:fontFamily="@font/body"
-        android:textColorHint="@color/colorWhite"
-        android:textColor="@color/colorWhite"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/icona_puntina"
+        android:drawableLeft="@drawable/icona_puntina"
+        android:fontFamily="@font/body"
+        android:gravity="center"
         android:hint="@string/nex_alert"
         android:text=""
-        android:gravity="center"
-        android:drawableStart="@drawable/icona_puntina"
-        android:drawableLeft="@drawable/icona_puntina" tools:targetApi="jelly_bean"/>
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorFade"
+        tools:targetApi="jelly_bean" />
 
     <TextView
         android:id="@+id/editText5"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_below="@+id/editText4"
-        android:fontFamily="@font/body"
-        android:textColorHint="@color/colorWhite"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/icona_puntina"
+        android:drawableLeft="@drawable/icona_puntina"
+        android:fontFamily="@font/body"
+        android:gravity="center"
         android:hint="@string/nex_alert"
         android:text=""
-        android:gravity="center"
         android:textColor="@color/colorWhite"
-        android:drawableStart="@drawable/icona_puntina"
-        android:drawableLeft="@drawable/icona_puntina" tools:targetApi="jelly_bean"/>
+        android:textColorHint="@color/colorFade"
+        tools:targetApi="jelly_bean" />
 
 
 </RelativeLayout>

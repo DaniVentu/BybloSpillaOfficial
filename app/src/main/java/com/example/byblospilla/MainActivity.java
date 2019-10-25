@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         /*setcontentview mi mostra la prima pagina dell'applicazione!
         * R.layout.activity_main è il percorso per trovare l'interfaccia grafica
         * in generale è R.CARTELLA.NOMERISORSA */
-        Button btnaccess = (Button) findViewById(R.id.accessbutton);
+        Button btnaccess = findViewById(R.id.accessbutton);
         final Intent openPage1 = new Intent(MainActivity.this, Page1.class);
         btnaccess.setOnClickListener(new View.OnClickListener() {
             @Override

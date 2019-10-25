@@ -18,16 +18,15 @@
     <string name="Code">Enter admin code</string>
     <string name="notify">Notifiche</string>
     <string name="week">Settimana Corrente</string>
-    <string name="Mattime">Mattino</string>
-    <string name="pomtime">Pomeriggio</string>
-    <string name="day1">Lun</string>
-    <string name="day2">Mar</string>
-    <string name="day3">Mer</string>
-    <string name="day4">Gio</string>
-    <string name="day5">Ven</string>
-    <string name="day6">Sab</string>
-    <string name="day7">Dom</string>
-    <string name="orset">Orario</string>
+    <string name="Mattime">Matt</string>
+    <string name="pomtime">Pome</string>
+    <string name="day1">Mon</string>
+    <string name="day2">Tue</string>
+    <string name="day3">Wed</string>
+    <string name="day4">Thu</string>
+    <string name="day5">Fri</string>
+    <string name="day6">Sat</string>
+    <string name="day7">Sun</string>
     <string name="ret">back</string>
     <string name="no">sbagliato</string>
     <string name="si">CORRETTO! Clicca su + per inserire una nuova modifica!</string>
@@ -65,7 +64,7 @@
 
     <string name="google_maps_key">AIzaSyB7keuvuA3rAWhy4ZRtCfXmlo1ZQbehSak</string>
     <string name="desc">Ciao! Benvenuto/a nelle nostre aule studio! queste aule sono interamente gestite da studenti come voi e garantiscono un servizio di attività con orario settimanale variabile stabilito in base alla possibilità degli studenti che le gestiscono, di poterla aprire.\n\nDaniela e Andrea sono gli sviluppatori dell\'app BYBLOS che permette ai gestori di questa aula studio di organizzare e informare tutti gli studenti interessati ad usufruire di questo servizio.</string>
-    <string name="closed">Chiusa</string>
+    <string name="closed">closed</string>
     <string name="title_activity_maps">Map</string>
     <string name="crediti">Credits</string>
     <string name="aule_studio">Aule Studio</string>
