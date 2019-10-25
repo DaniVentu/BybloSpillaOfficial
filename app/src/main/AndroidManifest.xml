@@ -3,21 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.byblospilla">
 
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
          location permissions for the 'MyLocation' functionality.
     -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
-    <!-- Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Permissions -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.    READ_GSERVICES" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Google MAP API key -->
-    <meta-data
-        android:name="com.google.android.maps.v2.API_KEY"
-        android:value="AIzaSyDKymeBXNeiFWY5jRUejv6zItpmr2MVyQ0" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+
 
     <application
         android:allowBackup="true"
@@ -33,14 +34,27 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".Page_where" android:screenOrientation="locked"/>
-        <activity android:name=".Page_Timetable" android:screenOrientation="locked"/>
-        <activity android:name=".Page_Events" android:screenOrientation="locked"/>
-        <activity android:name=".Page_Rooms" android:screenOrientation="locked"/>
-        <activity android:name=".Page_Settings" android:screenOrientation="locked"/>
-        <activity android:name=".Page_Info" android:screenOrientation="locked"/>
-        <activity android:name=".Page1" android:screenOrientation="locked"/>
-        <activity android:name=".MainActivity" android:screenOrientation="locked">
+        <activity
+            android:name=".Page_where"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".Page_Timetable"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".Page_Events"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".Page_Rooms"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".Page_Info"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".Page1"
+            android:screenOrientation="locked" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="locked">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

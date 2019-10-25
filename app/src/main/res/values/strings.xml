@@ -8,7 +8,6 @@
     <string name="prova">Benvenuto nella app Byblos</string>
     <string name="access">Entra in Byblos</string>
     <string name="Timetab">Orario</string>
-    <string name="avvisi">Avvisi</string>
     <string name="settings">Impostazioni</string>
     <string name="calendar">Calendario</string>
     <string name="credits">Crediti</string>
@@ -34,15 +33,15 @@
     <string name="si">CORRETTO! Clicca su + per inserire una nuova modifica!</string>
     <string name="add">+</string>
     <string name="save">Salva</string>
-    <string name="who">Chi Siamo?</string>
-    <string name="where">Dove Siamo?</string>
+    <string name="who">WHO?</string>
+    <string name="where">WHERE?</string>
     <string name="promo">Grazie a Byblos ottieni le seguenti promozioni presso il Bar "Caffè Mercato" (via Umberto I, 19, Spilamberto)</string>
     <string name="viewpromo">Mostra questi coupon per ottenere le promozioni</string>
     <string name="caffè">Caffé 0,90€</string>
     <string name="spritz">Spritz 4,50€</string>
     <string name="avviso">Inserire un Avviso</string>
     <string name="hintevent">Scrivi qui</string>
-    <string name="nex_alert">Nessun Avviso</string>
+    <string name="nex_alert">Empty</string>
     <string name="insta">FOLLOW US</string>
 
     <string name="mission">Our Mission</string>
@@ -55,13 +54,14 @@
 
     <string name="aule">ROOMS</string>
     <string name="rooms">Rooms</string>
+    <string name="timetable">Timetable</string>
     <string name="clima">clima</string>
     <string name="wifi">wifi</string>
     <string name="presa">presa</string>
     <string name="gialla">Aula\nGialla</string>
     <string name="verde">Aula\nVerde</string>
     <string name="room_description">La Byblos mette a disposizione due Aule, per un totale di \50 posti a sedere. In entrambe le aule sono presenti delle prese elettriche ed è possibile accedere al Wi-Fi. Inoltre sia l\' Aula Verde (nonchè aula silenziosa) sia l\' Aula Gialla sono climatizzate per garantire un ambiente adeguato sia in inverno che in estate.</string>
-    <string name="timetable">Timetable</string>
+
 
     <string name="google_maps_key">AIzaSyB7keuvuA3rAWhy4ZRtCfXmlo1ZQbehSak</string>
     <string name="desc">Ciao! Benvenuto/a nelle nostre aule studio! queste aule sono interamente gestite da studenti come voi e garantiscono un servizio di attività con orario settimanale variabile stabilito in base alla possibilità degli studenti che le gestiscono, di poterla aprire.\n\nDaniela e Andrea sono gli sviluppatori dell\'app BYBLOS che permette ai gestori di questa aula studio di organizzare e informare tutti gli studenti interessati ad usufruire di questo servizio.</string>

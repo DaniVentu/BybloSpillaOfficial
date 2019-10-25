@@ -21,8 +21,8 @@
 
     <Button
         android:id="@+id/btn_timetable"
-        android:layout_above="@id/btn_events"
-        android:layout_centerInParent="true"
+        android:layout_below="@id/testo"
+        android:layout_marginTop="15dp"
         android:layout_width="409dp"
         android:layout_height="100dp"
         android:background="@drawable/button_rounded_corners"
@@ -39,7 +39,7 @@
 
     <Button
         android:id="@+id/btn_events"
-        android:layout_centerInParent="true"
+        android:layout_below="@id/btn_timetable"
         android:layout_width="409dp"
         android:layout_height="100dp"
         android:layout_marginTop="5dp"
@@ -54,9 +54,7 @@
         android:drawablePadding="20dp"
         android:text="@string/notes"
         android:textColor="@color/colorPrimary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_timetable" />
+        />
 
     <Button
         android:id="@+id/btn_rooms"
@@ -76,10 +74,7 @@
         android:textColor="@color/colorPrimary"
         android:layout_below="@id/btn_events"
         android:layout_centerHorizontal="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_events" />
+        />
 
     <Button
         android:id="@+id/credits"
@@ -91,11 +86,11 @@
         android:text="@string/crediti"
         android:textColor="@color/colorPrimary"
         android:layout_alignParentBottom="true"
-        android:textStyle="bold"
+        android:textStyle="normal"
         tools:ignore="UnusedAttribute" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/logo"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_centerHorizontal="true"
@@ -108,10 +103,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/testo"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/imageView"
-        android:textStyle="italic"
+        android:layout_below="@+id/logo"
+        android:textStyle="normal"
         android:textSize="24sp"
         android:text="@string/aule_studio"
+        app:fontFamily="@font/title"
         android:textColor="@color/colorWhite"
         />
 

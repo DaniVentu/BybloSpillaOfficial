@@ -16,7 +16,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="19dp"
         android:fontFamily="@font/title_pro"
-        android:text="@string/avvisi"
+        android:text="@string/notes"
         android:layout_toRightOf="@id/retbtn"
         android:textColor="@color/colorWhite"
         android:textSize="25sp"

@@ -13,8 +13,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+
 
 public class Page_Events extends AppCompatActivity implements modify_events_dialog.modify_events_dialog_Listener{
+
 
     private TextView textView1;
     private TextView textView2;
@@ -23,11 +27,11 @@ public class Page_Events extends AppCompatActivity implements modify_events_dial
     private TextView textView5;
     private Button btnadd;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page__events);
-
 
         /* return */
         Button btnret = findViewById(R.id.retbtn);
