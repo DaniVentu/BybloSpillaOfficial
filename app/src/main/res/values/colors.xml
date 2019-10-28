@@ -6,4 +6,10 @@
     <color name="colorBlack">#000000</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorFade">#F3B080</color>
+
+    <!-- Color Progress Bar -->
+    <color name="color_preloader_start">#fdb6b6</color>
+    <color name="color_preloader_center">#fdb6b6</color>
+    <color name="color_preloader_end">#ffffff</color>
+
 </resources>

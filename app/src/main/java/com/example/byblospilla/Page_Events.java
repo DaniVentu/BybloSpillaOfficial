@@ -48,6 +48,7 @@ public class Page_Events extends AppCompatActivity implements modify_events_dial
             public void onClick(View view) {
                 AlertDialog.Builder mBuilder = new AlertDialog.Builder(Page_Events.this);
                 View mView = getLayoutInflater().inflate(R.layout.my_dialog, null);
+
                 final EditText mPassword = mView.findViewById(R.id.numericpw);
                 Button mLogin = mView.findViewById(R.id.btnLogin);
 
