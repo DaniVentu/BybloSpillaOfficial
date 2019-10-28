@@ -17,6 +17,8 @@ public class modify_events_dialog extends AppCompatDialogFragment {
     private EditText editTextModifica;
     private modify_events_dialog_Listener listener;
 
+
+
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
 
