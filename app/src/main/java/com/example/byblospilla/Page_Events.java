@@ -1,15 +1,17 @@
 package com.example.byblospilla;
 
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.ArrayList;
 
 public class Page_Events extends AppCompatActivity implements modify_events_dialog.modify_events_dialog_Listener{
 
@@ -22,10 +24,32 @@ public class Page_Events extends AppCompatActivity implements modify_events_dial
     private Button btnadd;
 
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page__events);
+
+        final ListView listView = findViewById(R.id.listview);
+        Button btnsave = findViewById(R.id.btnSalva);
+        final ArrayList<String> list;
+        final EditText editText = findViewById(R.id.edittype);
+        list = new ArrayList<>();
+        final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_list_item_1, list);
+        btnsave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String notes = editText.getText().toString();
+                list.add(notes);
+
+                listView.setAdapter(arrayAdapter);
+                arrayAdapter.notifyDataSetChanged();
+            }
+        });
+
+
 
         /* return */
         Button btnret = findViewById(R.id.retbtn);
@@ -34,58 +58,6 @@ public class Page_Events extends AppCompatActivity implements modify_events_dial
             @Override
             public void onClick(View v) {
                 startActivity(openret);
-            }
-        });
-
-
-        /*prova dialog*/
-        Button mShowDialog = findViewById(R.id.btnShowDialog);
-
-        mShowDialog.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-
-            public void onClick(View view) {
-                AlertDialog.Builder mBuilder = new AlertDialog.Builder(Page_Events.this);
-                View mView = getLayoutInflater().inflate(R.layout.my_dialog, null);
-
-                final EditText mPassword = mView.findViewById(R.id.numericpw);
-                Button mLogin = mView.findViewById(R.id.btnLogin);
-
-                mBuilder.setView(mView);
-                final AlertDialog dialog = mBuilder.create();
-                dialog.show();
-                mLogin.setOnClickListener(new View.OnClickListener() {
-
-                    @Override
-                    public void onClick(View view) {
-                        String pw = "1923";
-                        if (mPassword.getText().toString().isEmpty()) {
-                            Toast.makeText(Page_Events.this, "Inserisci codice Admin", Toast.LENGTH_SHORT).show();
-                            dialog.dismiss();
-                        } else if (mPassword.getText().toString().equals(pw)) {
-                            Toast.makeText(Page_Events.this, R.string.si, Toast.LENGTH_LONG).show();
-                            dialog.dismiss();
-                            /*starting modifying timetable code*/
-                            textView1 = findViewById(R.id.editText1);
-                            textView2 = findViewById(R.id.editText2);
-                            textView3 = findViewById(R.id.editText3);
-                            textView4 = findViewById(R.id.editText4);
-                            textView5 = findViewById(R.id.editText5);
-                            btnadd = findViewById(R.id.btnShowDialog);
-                            btnadd.setOnClickListener(new View.OnClickListener() {
-                                @Override
-                                public void onClick(View v) {
-                                    openDialog();
-                                }
-                            });
-                        } else {
-                            Toast.makeText(Page_Events.this, R.string.no, Toast.LENGTH_SHORT).show();
-                            dialog.dismiss();
-                        }
-
-                    }
-                });
             }
         });
 
@@ -112,5 +84,4 @@ public class Page_Events extends AppCompatActivity implements modify_events_dial
 
 
     }
-
 }

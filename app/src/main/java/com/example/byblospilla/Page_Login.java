@@ -1,6 +1,5 @@
 package com.example.byblospilla;
 
-import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,20 +8,19 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.ProgressBar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Page_Login extends AppCompatActivity {
 
+
+    ViewGroup progressView;
+    protected boolean isProgressShowing = false;
     EditText mTextUsername;
     EditText mTextPassword;
     Button mButtonLogin;
     TextView mTextViewRegister;
     DatabaseHelper db;
-    ViewGroup progressView;
-    protected boolean isProgressShowing = false;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
