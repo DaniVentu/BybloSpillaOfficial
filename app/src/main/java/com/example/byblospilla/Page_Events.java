@@ -32,10 +32,24 @@ public class Page_Events extends AppCompatActivity {
         listView = findViewById(R.id.listview);
         db1 = new DatabaseHelper1(this);
 
-        ArrayList<String> theList = new ArrayList<>();
+        final ArrayList<String> theList = new ArrayList<>();
         Cursor data;
         data = db1.getListContents();
 
+        btnsave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String newEntry = editText.getText().toString();
+                if(editText.length() != 0){
+                    AddData(newEntry);
+                    editText.setText("");
+
+                }else{
+                    Toast.makeText(Page_Events.this, "you must put something in the field", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+        });
 
         if(data.getCount() == 0){
             Toast.makeText(Page_Events.this, "DataBase is empty :(", Toast.LENGTH_SHORT).show();
@@ -47,20 +61,6 @@ public class Page_Events extends AppCompatActivity {
 
             }
         }
-
-        btnsave.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String newEntry = editText.getText().toString();
-                if(editText.length() != 0){
-                    AddData(newEntry);
-                    editText.setText("");
-                }else{
-                    Toast.makeText(Page_Events.this, "you must put something in the field", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-
 
 
         /* return */
@@ -84,4 +84,5 @@ public class Page_Events extends AppCompatActivity {
             Toast.makeText(Page_Events.this, "something went wrong :( ", Toast.LENGTH_SHORT).show();
         }
     }
+
 }

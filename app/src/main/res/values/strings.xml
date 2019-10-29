@@ -20,13 +20,17 @@
     <string name="week">Settimana Corrente</string>
     <string name="Mattime">Matt</string>
     <string name="pomtime">Pome</string>
-    <string name="day1">Mon</string>
-    <string name="day2">Tue</string>
-    <string name="day3">Wed</string>
-    <string name="day4">Thu</string>
-    <string name="day5">Fri</string>
-    <string name="day6">Sat</string>
-    <string name="day7">Sun</string>
+
+
+    <string name="day1">Monday</string>
+    <string name="day2">Tuesday</string>
+    <string name="day3">Wednesday</string>
+    <string name="day4">Thursday</string>
+    <string name="day5">Friday</string>
+    <string name="day6">Saturday</string>
+    <string name="day7">Sunday</string>
+
+
     <string name="ret">back</string>
     <string name="no">sbagliato</string>
     <string name="si">CORRETTO! Clicca su + per inserire una nuova modifica!</string>
@@ -89,4 +93,5 @@
     <string name="red">RED</string>
     <string name="blue">BLUE</string>
     <string name="green">GREEN</string>
+    <string name="time">WEEKLY TIMETABLE</string>
 </resources>

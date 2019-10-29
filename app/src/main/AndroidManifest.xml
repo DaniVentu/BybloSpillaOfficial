@@ -27,9 +27,6 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".Page_HomeActivity"
-            android:screenOrientation="locked" />
-        <activity
             android:name=".Page_Register"
             android:screenOrientation="locked" />
         <activity

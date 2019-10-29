@@ -9,7 +9,7 @@
 
     <TableLayout
         android:id="@+id/TL"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
@@ -23,29 +23,25 @@
 
             <TextView
                 android:id="@+id/blanc"
-                android:layout_width="70dp"
-                android:layout_height="50dp"
-                android:gravity="center" />
+                android:layout_width="109dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:background="@drawable/icona_clock"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:id="@+id/mattino"
-                android:layout_width="144dp"
-                android:layout_height="50dp"
+                android:layout_width="289dp"
+                android:layout_height="30dp"
+                android:fontFamily="@font/title"
+                android:layout_gravity="center"
                 android:gravity="center"
-                android:text="@string/Mattime"
-                android:textColor="@color/colorPrimary"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+                android:text="@string/time"
+                android:textColor="@color/colorFade"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:targetApi="jelly_bean" />
 
-            <TextView
-                android:id="@+id/pomeriggio"
-                android:layout_width="144dp"
-                android:layout_height="50dp"
-                android:gravity="center"
-                android:text="@string/pomtime"
-                android:textColor="@color/colorPrimary"
-                android:textSize="14sp"
-                android:textStyle="bold" />
         </TableRow>
 
         <TableRow
@@ -56,14 +52,15 @@
 
             <TextView
                 android:id="@+id/lun"
-                android:layout_width="70dp"
-                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
                 android:gravity="center"
+                android:layout_gravity="center"
                 android:text="@string/day1"
-                android:textColor="@color/colorPrimary"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
+                android:textColor="@color/colorFade"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
             <EditText
                 android:id="@+id/m11"
                 android:layout_width="144dp"
@@ -71,22 +68,13 @@
                 android:gravity="center"
                 android:importantForAutofill="no"
                 android:inputType=""
+                android:autofillHints="@string/closed"
                 android:text=""
                 android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
-                tools:ignore="LabelFor" />
+                tools:ignore="LabelFor"
+                tools:targetApi="o" />
 
-            <EditText
-                android:id="@+id/p11"
-                android:layout_width="144dp"
-                android:layout_height="50dp"
-                android:gravity="center"
-                android:importantForAutofill="no"
-                android:inputType=""
-                android:text=""
-                android:textColor="@color/colorPrimary"
-                android:textSize="12sp"
-                tools:ignore="LabelFor" />
         </TableRow>
 
         <TableRow
@@ -97,12 +85,13 @@
 
             <TextView
                 android:id="@+id/mar"
-                android:layout_width="70dp"
-                android:layout_height="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
                 android:gravity="center"
+                android:layout_gravity="center"
                 android:text="@string/day2"
-                android:textColor="@color/colorPrimary"
-                android:textSize="24sp"
+                android:textColor="@color/colorFade"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -111,23 +100,14 @@
                 android:layout_height="50dp"
                 android:gravity="center"
                 android:importantForAutofill="no"
+                android:autofillHints="@string/closed"
                 android:inputType=""
                 android:text=""
                 android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
-                tools:ignore="LabelFor" />
+                tools:ignore="LabelFor"
+                tools:targetApi="o" />
 
-            <EditText
-                android:id="@+id/p22"
-                android:layout_width="144dp"
-                android:layout_height="50dp"
-                android:gravity="center"
-                android:importantForAutofill="no"
-                android:inputType=""
-                android:text=""
-                android:textColor="@color/colorPrimary"
-                android:textSize="12sp"
-                tools:ignore="LabelFor" />
         </TableRow>
 
         <TableRow
@@ -138,12 +118,13 @@
 
             <TextView
                 android:id="@+id/mer"
-                android:layout_width="70dp"
-                android:layout_height="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
                 android:gravity="center"
+                android:layout_gravity="center"
                 android:text="@string/day3"
-                android:textColor="@color/colorPrimary"
-                android:textSize="24sp"
+                android:textColor="@color/colorFade"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -152,23 +133,14 @@
                 android:layout_height="50dp"
                 android:gravity="center"
                 android:importantForAutofill="no"
+                android:autofillHints="@string/closed"
                 android:inputType=""
                 android:text=""
                 android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
-                tools:ignore="LabelFor" />
+                tools:ignore="LabelFor"
+                tools:targetApi="o" />
 
-            <EditText
-                android:id="@+id/p33"
-                android:layout_width="144dp"
-                android:layout_height="50dp"
-                android:gravity="center"
-                android:importantForAutofill="no"
-                android:inputType=""
-                android:text=""
-                android:textColor="@color/colorPrimary"
-                android:textSize="12sp"
-                tools:ignore="LabelFor" />
         </TableRow>
 
         <TableRow
@@ -179,12 +151,13 @@
 
             <TextView
                 android:id="@+id/gio"
-                android:layout_width="70dp"
-                android:layout_height="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
                 android:gravity="center"
+                android:layout_gravity="center"
                 android:text="@string/day4"
-                android:textColor="@color/colorPrimary"
-                android:textSize="24sp"
+                android:textColor="@color/colorFade"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -197,19 +170,10 @@
                 android:text=""
                 android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
-                tools:ignore="LabelFor" />
+                tools:ignore="LabelFor"
+                android:autofillHints="@string/closed"
+                tools:targetApi="o" />
 
-            <EditText
-                android:id="@+id/p44"
-                android:layout_width="144dp"
-                android:layout_height="50dp"
-                android:gravity="center"
-                android:importantForAutofill="no"
-                android:inputType=""
-                android:text=""
-                android:textColor="@color/colorPrimary"
-                android:textSize="12sp"
-                tools:ignore="LabelFor" />
         </TableRow>
 
         <TableRow
@@ -220,12 +184,13 @@
 
             <TextView
                 android:id="@+id/ven"
-                android:layout_width="70dp"
-                android:layout_height="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
                 android:gravity="center"
+                android:layout_gravity="center"
                 android:text="@string/day5"
-                android:textColor="@color/colorPrimary"
-                android:textSize="24sp"
+                android:textColor="@color/colorFade"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -238,19 +203,10 @@
                 android:text=""
                 android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
-                tools:ignore="LabelFor" />
+                tools:ignore="LabelFor"
+                android:autofillHints="@string/closed"
+                tools:targetApi="o"/>
 
-            <EditText
-                android:id="@+id/p55"
-                android:layout_width="144dp"
-                android:layout_height="50dp"
-                android:gravity="center"
-                android:importantForAutofill="no"
-                android:inputType=""
-                android:text=""
-                android:textColor="@color/colorPrimary"
-                android:textSize="12sp"
-                tools:ignore="LabelFor" />
         </TableRow>
 
         <TableRow
@@ -261,12 +217,13 @@
 
             <TextView
                 android:id="@+id/sab"
-                android:layout_width="70dp"
-                android:layout_height="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
                 android:gravity="center"
+                android:layout_gravity="center"
                 android:text="@string/day6"
-                android:textColor="@color/colorPrimary"
-                android:textSize="24sp"
+                android:textColor="@color/colorFade"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -281,17 +238,6 @@
                 android:textSize="12sp"
                 tools:ignore="LabelFor" />
 
-            <EditText
-                android:id="@+id/p66"
-                android:layout_width="144dp"
-                android:layout_height="50dp"
-                android:gravity="center"
-                android:importantForAutofill="no"
-                android:inputType=""
-                android:text=""
-                android:textColor="@color/colorPrimary"
-                android:textSize="12sp"
-                tools:ignore="LabelFor" />
         </TableRow>
 
         <TableRow
@@ -302,12 +248,13 @@
 
             <TextView
                 android:id="@+id/dom"
-                android:layout_width="70dp"
-                android:layout_height="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
                 android:gravity="center"
+                android:layout_gravity="center"
                 android:text="@string/day7"
-                android:textColor="@color/colorPrimary"
-                android:textSize="24sp"
+                android:textColor="@color/colorFade"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -320,19 +267,10 @@
                 android:text=""
                 android:textColor="@color/colorPrimary"
                 android:textSize="12sp"
-                tools:ignore="LabelFor" />
+                tools:ignore="LabelFor"
+                android:autofillHints="@string/closed"
+                tools:targetApi="o"/>
 
-            <EditText
-                android:id="@+id/p77"
-                android:layout_width="144dp"
-                android:layout_height="50dp"
-                android:gravity="center"
-                android:importantForAutofill="no"
-                android:inputType=""
-                android:text=""
-                android:textColor="@color/colorPrimary"
-                android:textSize="12sp"
-                tools:ignore="LabelFor" />
         </TableRow>
 
     </TableLayout>
