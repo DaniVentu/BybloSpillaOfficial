@@ -19,35 +19,55 @@ tools:context=".Page_Register">
     android:id="@+id/edittext_username"
     android:layout_width="206dp"
     android:layout_height="40dp"
-    android:layout_marginTop="10dp"
-    android:paddingLeft="2dp"
-    android:background="#ffffff"
-    android:drawableLeft="@drawable/username"
-    android:hint="@string/username"/>
+    android:layout_marginTop="20dp"
+    android:drawablePadding="10dp"
+    android:padding="10dp"
+    android:background="@drawable/edittext_rounded"
+    android:drawableLeft="@drawable/icona_user_login"
+    android:drawableStart="@drawable/icona_user_login"
+    android:textColorHint="#9A91AC"
+    android:hint="@string/username"
+    android:textColor="@color/colorPrimaryDark"
+    android:textSize="15sp"/>
 
 <EditText
     android:id="@+id/edittext_password"
     android:layout_width="206dp"
     android:layout_height="40dp"
     android:layout_marginTop="20dp"
-    android:background="#ffffff"
-    android:drawableLeft="@drawable/password"
-    android:hint="@string/password"/>
+    android:drawablePadding="10dp"
+    android:padding="10dp"
+    android:background="@drawable/edittext_rounded"
+    android:drawableLeft="@drawable/icona_password_login"
+    android:drawableStart="@drawable/icona_password_login"
+    android:textColorHint="#9A91AC"
+    android:hint="@string/password"
+    android:textColor="@color/colorPrimaryDark"
+    android:inputType="textPassword"
+    android:textSize="15sp"/>
 
 <EditText
     android:id="@+id/edittext_cnf_password"
     android:layout_width="206dp"
     android:layout_height="40dp"
     android:layout_marginTop="20dp"
-    android:background="#ffffff"
-    android:drawableLeft="@drawable/password"
-    android:hint="@string/confirm_password"/>
+    android:drawablePadding="10dp"
+    android:padding="10dp"
+    android:background="@drawable/edittext_rounded"
+    android:drawableLeft="@drawable/icona_password_login"
+    android:drawableStart="@drawable/icona_password_login"
+    android:textColorHint="#9A91AC"
+    android:hint="@string/confirm_password"
+    android:textColor="@color/colorPrimaryDark"
+    android:inputType="textPassword"
+    android:textSize="15sp"/>
+
 <Button
     android:id="@+id/button_register"
     android:layout_width="206dp"
     android:layout_height="40dp"
     android:layout_marginTop="20dp"
-    android:background="#04ea00"
+    android:background="@drawable/button_rounded_corners"
     android:textColor="#ffffff"
     android:text="@string/register"/>
 
@@ -69,7 +89,7 @@ tools:context=".Page_Register">
         android:layout_height="35dp"
         android:paddingLeft="10dp"
         android:textStyle="bold"
-        android:textColor="#04ea00"
+        android:textColor="@color/colorFade"
         android:textSize="16sp"
         android:text="@string/login"/>
 

@@ -27,20 +27,33 @@ tools:context=".Page_Login">
         android:id="@+id/edittext_username"
         android:layout_width="190dp"
         android:layout_height="40dp"
-        android:layout_marginTop="10dp"
-        android:paddingLeft="2dp"
-        android:background="#ffffff"
-        android:drawableLeft="@drawable/username"
-        android:hint="@string/username"/>
+        android:layout_marginTop="20dp"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:background="@drawable/edittext_rounded"
+        android:drawableLeft="@drawable/icona_user_login"
+        android:drawableStart="@drawable/icona_user_login"
+        android:textColorHint="#9A91AC"
+        android:hint="@string/username"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"/>
 
     <EditText
         android:id="@+id/edittext_password"
         android:layout_width="190dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
-        android:background="#ffffff"
-        android:drawableLeft="@drawable/password"
-        android:hint="@string/password"/>
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:background="@drawable/edittext_rounded"
+        android:drawableLeft="@drawable/icona_password_login"
+        android:drawableStart="@drawable/icona_password_login"
+        android:textColorHint="#9A91AC"
+        android:hint="@string/password"
+        android:textColor="@color/colorPrimaryDark"
+        android:inputType="textPassword"
+        android:textSize="15sp"/>
+
 </LinearLayout>
 
 <Button
