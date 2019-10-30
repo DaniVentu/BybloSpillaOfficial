@@ -91,7 +91,7 @@ public class Page_Events extends AppCompatActivity {
         //viewLast();
         Cursor res = db1.getData();
         if(res.getCount() == 0){
-            showMessage("NOTE","BENVENUTO NELLE NOTE, qui inserire nuove note per informare gli altri utenti!\n Attenzione!! Puoi aggiungere note solo se possiedi il codice ADMIN!");
+            showMessage("NOTE","BENVENUTO NELLE NOTE! Qui inserire nuove note per informare gli altri utenti! Attenzione: puoi aggiungere note solo se possiedi il codice ADMIN!");
             return;
         }
         StringBuilder buffer1 = new StringBuilder();

@@ -22,7 +22,7 @@ public class Page_Timetable extends AppCompatActivity {
     private TextView textViewm6;
     private TextView textViewm7;
 
-    private Button refresh;
+
 
 
     @Override
@@ -38,7 +38,6 @@ public class Page_Timetable extends AppCompatActivity {
         textViewm6 = findViewById(R.id.m6);
         textViewm7 = findViewById(R.id.m7);
 
-        refresh = findViewById(R.id.btnrefresh);
 
         db = new DatabaseHelper2(this);
 
@@ -100,7 +99,7 @@ public class Page_Timetable extends AppCompatActivity {
         //viewLast();
         Cursor res = db.getData();
         if(res.getCount() == 0){
-            showMessage("Error","Nothing found!!!");
+            showMessage("TIMETABLE","BENVENUTO NELLA SEZIONE TIMETABLE! Qui tramite un codice di accesso ADMIN puoi modificare l'orario settimanale delle aule studio BYBLOS" );
             return;
         }
         StringBuilder buffer1 = new StringBuilder();
