@@ -121,6 +121,8 @@ public class Page_Events extends AppCompatActivity {
                 t2.setText(t);
             }
             t1.setText(buffer1);
+            int len = buffer1.length();
+            buffer1.delete(0,len);
         }
 
 
