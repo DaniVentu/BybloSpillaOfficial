@@ -2,6 +2,7 @@ package com.example.byblospilla;
 
 import android.app.AlertDialog;
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,8 +12,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Page_Timetable extends AppCompatActivity implements modify_timetable_dialog.modify_timetable_dialogListener {
-
+public class Page_Timetable extends AppCompatActivity {
+    DatabaseHelper2 db;
     private TextView textViewm1;
     private TextView textViewm2;
     private TextView textViewm3;
@@ -21,12 +22,26 @@ public class Page_Timetable extends AppCompatActivity implements modify_timetabl
     private TextView textViewm6;
     private TextView textViewm7;
 
-    private Button btnadd;
+    private Button refresh;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page__timetable);
+
+        textViewm1 = findViewById(R.id.m1);
+        textViewm2 = findViewById(R.id.m2);
+        textViewm3 = findViewById(R.id.m3);
+        textViewm4 = findViewById(R.id.m4);
+        textViewm5 = findViewById(R.id.m5);
+        textViewm6 = findViewById(R.id.m6);
+        textViewm7 = findViewById(R.id.m7);
+
+        refresh = findViewById(R.id.btnrefresh);
+
+        db = new DatabaseHelper2(this);
+
 
         /* return */
         Button btnret = findViewById(R.id.retbtn);
@@ -51,7 +66,7 @@ public class Page_Timetable extends AppCompatActivity implements modify_timetabl
                 AlertDialog.Builder mBuilder = new AlertDialog.Builder(Page_Timetable.this);
                 View mView = getLayoutInflater().inflate(R.layout.my_dialog, null);
                 final EditText mPassword =  mView.findViewById(R.id.numericpw);
-                Button mLogin = mView.findViewById(R.id.btnLogin);
+                final Button mLogin = mView.findViewById(R.id.btnLogin);
 
                 mBuilder.setView(mView);
                 final AlertDialog dialog = mBuilder.create();
@@ -67,25 +82,10 @@ public class Page_Timetable extends AppCompatActivity implements modify_timetabl
                             Toast.makeText(Page_Timetable.this, "Inserisci codice Admin", Toast.LENGTH_SHORT).show();
                             dialog.dismiss();
                         }else if (mPassword.getText().toString().equals(pw)){
-                            Toast.makeText(Page_Timetable.this, R.string.si,Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Page_Timetable.this,"Now you are able to modify the timetable!!",Toast.LENGTH_SHORT).show();
+                            final Intent openmod = new Intent(Page_Timetable.this, Page_modifytimetable.class);
+                            startActivity(openmod);
                             dialog.dismiss();
-                            /*starting modifying timetable code*/
-                            textViewm1 = findViewById(R.id.m1);
-                            textViewm2 = findViewById(R.id.m2);
-                            textViewm3 = findViewById(R.id.m3);
-                            textViewm4 = findViewById(R.id.m4);
-                            textViewm5 = findViewById(R.id.m5);
-                            textViewm6 = findViewById(R.id.m6);
-                            textViewm7 = findViewById(R.id.m7);
-
-                            btnadd = findViewById(R.id.btnShowDialog);
-                            btnadd.setOnClickListener(new View.OnClickListener() {
-                                @Override
-                                public void onClick(View v) {
-                                    openDialog();
-                                }
-                            });
-
                         }
                         else{
                             Toast.makeText(Page_Timetable.this, R.string.no, Toast.LENGTH_SHORT).show();
@@ -96,49 +96,49 @@ public class Page_Timetable extends AppCompatActivity implements modify_timetabl
                 });
             }
         });
-    }
 
-    @Override
-    public void applyTexts1(String m1, String m2, String m3, String m4, String m5, String m6, String m7) {
-        if(!m1.equals("Chiusa")){
-            if(!m1.equals(""))
-                textViewm1.setText(m1);
+        //viewLast();
+        Cursor res = db.getData();
+        if(res.getCount() == 0){
+            showMessage("Error","Nothing found!!!");
+            return;
+        }
+        StringBuilder buffer1 = new StringBuilder();
+        StringBuilder buffer2 = new StringBuilder();
+        StringBuilder buffer3 = new StringBuilder();
+        StringBuilder buffer4 = new StringBuilder();
+        StringBuilder buffer5 = new StringBuilder();
+        StringBuilder buffer6 = new StringBuilder();
+        StringBuilder buffer7 = new StringBuilder();
+
+        while(res.moveToNext()){
+            buffer1.append(res.getString(1));
+            buffer2.append(res.getString(2));
+            buffer3.append(res.getString(3));
+            buffer4.append(res.getString(4));
+            buffer5.append(res.getString(5));
+            buffer6.append(res.getString(6));
+            buffer7.append(res.getString(7));
         }
 
-        if(!m2.equals("Chiusa")){
-            if (!m2.equals(""))
-                textViewm2.setText(m2);
-        }
-
-        if(!m3.equals("Chiusa")){
-            if (!m3.equals(""))
-                textViewm3.setText(m3);
-        }
-
-        if(!m4.equals("Chiusa")){
-            if (!m4.equals(""))
-                textViewm4.setText(m4);
-        }
-
-        if(!m5.equals("Chiusa")){
-            if (!m5.equals(""))
-                textViewm5.setText(m5);
-        }
-
-        if(!m6.equals("Chiusa")){
-            if (!m6.equals(""))
-                textViewm6.setText(m6);
-        }
-
-        if(!m7.equals("Chiusa")){
-            if (!m7.equals(""))
-                textViewm7.setText(m7);
-        }
+        //show last data
+        textViewm1.setText(buffer1);
+        textViewm2.setText(buffer2);
+        textViewm3.setText(buffer3);
+        textViewm4.setText(buffer4);
+        textViewm5.setText(buffer5);
+        textViewm6.setText(buffer6);
+        textViewm7.setText(buffer7);
 
     }
 
-    public void openDialog(){
-        modify_timetable_dialog modify_timetable_dialog = new modify_timetable_dialog();
-        modify_timetable_dialog.show(getSupportFragmentManager(),"modify timetable dialog");
+
+    private void showMessage(String title, String message){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setCancelable(true);
+        builder.setTitle(title);
+        builder.setMessage(message);
+        builder.show();
     }
+
 }
