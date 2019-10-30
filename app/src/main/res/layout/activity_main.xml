@@ -70,8 +70,8 @@
         android:text="@string/access"
         android:textAllCaps="true"
         android:textColor="@color/colorPrimary"
-        android:textSize="14sp"
-        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textStyle="normal"
         app:fontFamily="@font/title"
         android:layout_alignParentBottom="true"/>
 
@@ -79,8 +79,9 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
         android:layout_above="@+id/btn_settings"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@android:string/yes"
         app:srcCompat="@drawable/new_logo_transparent" />
 
 </RelativeLayout>

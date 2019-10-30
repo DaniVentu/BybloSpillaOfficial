@@ -84,5 +84,6 @@ tools:context=".Page_Login">
         android:textStyle="bold"
         android:textColor="@color/colorFade"
         android:text="@string/register"/>
+
 </LinearLayout>
 </LinearLayout>

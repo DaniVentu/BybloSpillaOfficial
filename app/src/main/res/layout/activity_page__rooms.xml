@@ -13,12 +13,10 @@
         style="?borderlessButtonStyle"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginTop="15dp"
         android:drawableTop="@drawable/icona_back"
         android:drawableTint="@color/colorWhite"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" tools:targetApi="m"/>
-
+        tools:targetApi="m"/>
 
     <TextView
         android:id="@+id/rooms"
@@ -26,12 +24,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="19dp"
         android:fontFamily="@font/title_pro"
         android:text="@string/rooms"
         android:layout_toRightOf="@id/retbtn"
         android:textColor="@color/colorWhite"
-        android:textSize="25sp"
+        android:textSize="36sp"
         tools:targetApi="jelly_bean"
         android:layout_toEndOf="@id/retbtn" />
 
@@ -40,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="85dp"
         android:layout_marginRight="15dp"
         android:layout_centerHorizontal="true"
         app:cardBackgroundColor="#732648"
@@ -126,7 +124,7 @@
             android:drawablePadding="7dp"
             android:drawableStart="@drawable/icona_verde"
             android:drawableLeft="@drawable/icona_verde"
-            android:gravity="right"
+            android:gravity="end"
             android:layout_gravity="center_horizontal|center_vertical"
             app:fontFamily="@font/title"/>
     </androidx.cardview.widget.CardView>
@@ -151,7 +149,7 @@
             android:drawableEnd="@drawable/icona_gialla"
             android:drawableRight="@drawable/icona_gialla"
             android:text="@string/verde"
-            android:gravity="left"
+            android:gravity="start"
             android:layout_gravity="center_horizontal|center_vertical"
             app:fontFamily="@font/title"/>
     </androidx.cardview.widget.CardView>

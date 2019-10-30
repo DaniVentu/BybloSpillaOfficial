@@ -66,7 +66,7 @@
     <!-- WHO_secondary Strings -->
 
     <string name="founders">Founders</string>
-    <string name="founders_body">L\'idea di fondare la Byblos parte da un piccolo gruppo di studenti universitari residenti a Spilamberto.\n- Nicola Borghi\n- Fabio Borelli\n- Benedetta Prandini\n- Francesco Aldo Venturelli</string>
+    <string name="founders_body">L\'idea di fondare la Byblos parte da un piccolo gruppo di studenti universitari residenti a Spilamberto.\n\u2022 Nicola Borghi\n\u2022 Fabio Borelli\n\u2022 Benedetta Prandini\n\u2022 Francesco Aldo Venturelli</string>
     <string name="founders_body2">Il sindaco di Spilamberto Umberto Costantini ha dato fiducia a questo progetto permettendo a tutti gli effetti la sua realizzazione.\nOra la Byblos ha più di 20 volontari che si impegnano a garantire aperture pomeridiane e serali.</string>
 
     <string name="developers">Developers</string>
