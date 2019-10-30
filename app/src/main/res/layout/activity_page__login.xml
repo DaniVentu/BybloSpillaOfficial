@@ -20,12 +20,11 @@ tools:context=".Page_Login">
     android:gravity="center_horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-
     android:orientation="vertical">
 
     <EditText
         android:id="@+id/edittext_username"
-        android:layout_width="190dp"
+        android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
         android:drawablePadding="10dp"
@@ -33,14 +32,14 @@ tools:context=".Page_Login">
         android:background="@drawable/edittext_rounded"
         android:drawableLeft="@drawable/icona_user_login"
         android:drawableStart="@drawable/icona_user_login"
-        android:textColorHint="#9A91AC"
+        android:textColorHint="#9E7370"
         android:hint="@string/username"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="15sp"/>
 
     <EditText
         android:id="@+id/edittext_password"
-        android:layout_width="190dp"
+        android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
         android:drawablePadding="10dp"
@@ -48,7 +47,7 @@ tools:context=".Page_Login">
         android:background="@drawable/edittext_rounded"
         android:drawableLeft="@drawable/icona_password_login"
         android:drawableStart="@drawable/icona_password_login"
-        android:textColorHint="#9A91AC"
+        android:textColorHint="#9E7370"
         android:hint="@string/password"
         android:textColor="@color/colorPrimaryDark"
         android:inputType="textPassword"
@@ -58,7 +57,7 @@ tools:context=".Page_Login">
 
 <Button
     android:id="@+id/button_login"
-    android:layout_width="190dp"
+    android:layout_width="200dp"
     android:layout_height="40dp"
     android:layout_marginTop="20dp"
     android:background="@drawable/button_rounded_corners"
@@ -69,7 +68,7 @@ tools:context=".Page_Login">
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:layout_marginTop="10dp">
+    android:layout_marginTop="15dp">
 
     <TextView
         android:layout_width="wrap_content"
@@ -81,7 +80,7 @@ tools:context=".Page_Login">
         android:id="@+id/textview_register"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
-        android:paddingLeft="10dp"
+        android:paddingLeft="5dp"
         android:textStyle="bold"
         android:textColor="@color/colorFade"
         android:text="@string/register"/>

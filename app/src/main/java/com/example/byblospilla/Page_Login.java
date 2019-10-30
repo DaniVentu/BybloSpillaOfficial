@@ -59,7 +59,7 @@ public class Page_Login extends AppCompatActivity {
                 }
                 else
                 {
-                    Toast.makeText(Page_Login.this,"Login Error",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Page_Login.this,"Please enter a valid Username and Password",Toast.LENGTH_SHORT).show();
                 }
             }
         });

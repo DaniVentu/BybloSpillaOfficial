@@ -25,7 +25,7 @@ tools:context=".Page_Register">
     android:background="@drawable/edittext_rounded"
     android:drawableLeft="@drawable/icona_user_login"
     android:drawableStart="@drawable/icona_user_login"
-    android:textColorHint="#9A91AC"
+    android:textColorHint="#9E7370"
     android:hint="@string/username"
     android:textColor="@color/colorPrimaryDark"
     android:textSize="15sp"/>
@@ -40,7 +40,7 @@ tools:context=".Page_Register">
     android:background="@drawable/edittext_rounded"
     android:drawableLeft="@drawable/icona_password_login"
     android:drawableStart="@drawable/icona_password_login"
-    android:textColorHint="#9A91AC"
+    android:textColorHint="#9E7370"
     android:hint="@string/password"
     android:textColor="@color/colorPrimaryDark"
     android:inputType="textPassword"
@@ -56,7 +56,7 @@ tools:context=".Page_Register">
     android:background="@drawable/edittext_rounded"
     android:drawableLeft="@drawable/icona_password_login"
     android:drawableStart="@drawable/icona_password_login"
-    android:textColorHint="#9A91AC"
+    android:textColorHint="#9E7370"
     android:hint="@string/confirm_password"
     android:textColor="@color/colorPrimaryDark"
     android:inputType="textPassword"
@@ -75,22 +75,21 @@ tools:context=".Page_Register">
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:layout_marginTop="10dp">
+    android:layout_marginTop="15dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="35dp"
-        android:textColor="#ffffff"
-        android:text="@string/already_registered"/>
+        android:text="@string/already_registered"
+        android:textColor="#ffffff" />
 
     <TextView
         android:id="@+id/textview_login"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
-        android:paddingLeft="10dp"
+        android:paddingLeft="5dp"
         android:textStyle="bold"
         android:textColor="@color/colorFade"
-        android:textSize="16sp"
         android:text="@string/login"/>
 
 </LinearLayout>

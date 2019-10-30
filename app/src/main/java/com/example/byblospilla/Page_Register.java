@@ -48,12 +48,12 @@ public class Page_Register extends AppCompatActivity {
                 if(pwd.equals(cnf_pwd)){
                     long val = db.addUser(user,pwd);
                     if(val > 0){
-                        Toast.makeText(Page_Register.this,"You have registered",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Page_Register.this,"You already have an account",Toast.LENGTH_SHORT).show();
                         Intent moveToLogin = new Intent(Page_Register.this,Page_Login.class);
                         startActivity(moveToLogin);
                     }
                     else{
-                        Toast.makeText(Page_Register.this,"Registeration Error",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Page_Register.this,"Registration Error",Toast.LENGTH_SHORT).show();
                     }
 
                 }

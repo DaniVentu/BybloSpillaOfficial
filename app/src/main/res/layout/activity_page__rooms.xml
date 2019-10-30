@@ -62,8 +62,8 @@
                 android:contentDescription="@string/clima"
                 app:srcCompat="@drawable/clima"
                 android:adjustViewBounds="true"
-                android:maxWidth="20dp"
-                android:maxHeight="20dp"
+                android:maxWidth="35dp"
+                android:maxHeight="35dp"
                 android:scaleType="fitCenter"/>
 
             <ImageView
@@ -79,8 +79,8 @@
                 android:contentDescription="@string/wifi"
                 app:srcCompat="@drawable/wifi"
                 android:adjustViewBounds="true"
-                android:maxWidth="20dp"
-                android:maxHeight="20dp"
+                android:maxWidth="35dp"
+                android:maxHeight="35dp"
                 android:scaleType="fitCenter"/>
 
             <ImageView
@@ -98,8 +98,8 @@
                 android:contentDescription="@string/presa"
                 app:srcCompat="@drawable/presa"
                 android:adjustViewBounds="true"
-                android:maxWidth="20dp"
-                android:maxHeight="20dp"
+                android:maxWidth="35dp"
+                android:maxHeight="35dp"
                 android:scaleType="fitCenter"/>
 
         </RelativeLayout>
@@ -123,7 +123,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/gialla"
-            android:gravity="center"
+            android:drawablePadding="7dp"
+            android:drawableStart="@drawable/icona_verde"
+            android:drawableLeft="@drawable/icona_verde"
+            android:gravity="right"
             android:layout_gravity="center_horizontal|center_vertical"
             app:fontFamily="@font/title"/>
     </androidx.cardview.widget.CardView>
@@ -144,8 +147,11 @@
             android:id="@+id/aulaverde"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:drawablePadding="7dp"
+            android:drawableEnd="@drawable/icona_gialla"
+            android:drawableRight="@drawable/icona_gialla"
             android:text="@string/verde"
-            android:gravity="center"
+            android:gravity="left"
             android:layout_gravity="center_horizontal|center_vertical"
             app:fontFamily="@font/title"/>
     </androidx.cardview.widget.CardView>

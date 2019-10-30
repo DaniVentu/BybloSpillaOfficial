@@ -54,7 +54,8 @@
 
     <!-- WHO_main Strings -->
 
-    <string name="mission">Our Mission</string>
+    <string name="aboutus">About Us</string>
+    <string name="mission">Our Mission:</string>
     <string name="studio">tudy</string>
     <string name="studio1_1">Uno degli obiettivi principali della Byblos è quello di creare un ambiente adatto allo studio che possa ritenersi una valida alternativa alle biblioteche comunali ed universitarie che tendono a rimanere chiuse proprio nei periodi in prossimità delle sessioni di esami; inoltre l\'Aula Studio Byblos si impegna a garantire anche aperture serali.</string>
     <string name="silenzio">ilence</string>
@@ -96,13 +97,13 @@
 
     <!-- Login Strings -->
 
-    <string name="login">Login</string>
+    <string name="login">LOGIN</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
-    <string name="not_registered">Not a member yet?</string>
-    <string name="register">Sign up</string>
+    <string name="not_registered">Don\'t Have An Account?</string>
+    <string name="register">SIGN UP</string>
     <string name="confirm_password">Confirm Password</string>
-    <string name="already_registered">Have an account?</string>
+    <string name="already_registered">Already Have An Account?</string>
     <string name="welcome_user">Welcome User</string>
     <string name="type_here_a_new_note">Type here a new Note</string>
 
