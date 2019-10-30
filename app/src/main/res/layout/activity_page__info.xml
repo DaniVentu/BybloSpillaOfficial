@@ -43,9 +43,9 @@
             android:layout_width="387dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="80dp"
             android:layout_marginRight="15dp"
-            app:cardBackgroundColor="#732648"
+            app:cardBackgroundColor="#E3534C"
             app:cardCornerRadius="8dp">
 
             <RelativeLayout
@@ -58,8 +58,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
-                    android:drawableStart="@drawable/icon_s"
-                    android:drawableLeft="@drawable/icon_s"
+                    android:drawableStart="@drawable/icona_s"
+                    android:drawableLeft="@drawable/icona_s"
                     android:drawingCacheQuality="high"
                     app:fontFamily="@font/title"
                     android:gravity="center"
@@ -75,8 +75,8 @@
                     android:layout_below="@id/studio"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
-                    android:drawableStart="@drawable/icon_s"
-                    android:drawableLeft="@drawable/icon_s"
+                    android:drawableStart="@drawable/icona_s"
+                    android:drawableLeft="@drawable/icona_s"
                     app:fontFamily="@font/title"
                     android:gravity="center"
                     android:text="@string/silenzio"
@@ -92,8 +92,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
-                    android:drawableStart="@drawable/icon_s"
-                    android:drawableLeft="@drawable/icon_s"
+                    android:drawableStart="@drawable/icona_s"
+                    android:drawableLeft="@drawable/icona_s"
                     app:fontFamily="@font/title"
                     android:gravity="center"
                     android:text="@string/sociale"
@@ -112,7 +112,7 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="15dp"
-            app:cardBackgroundColor="#732648"
+            app:cardBackgroundColor="#CC4B44"
             app:cardCornerRadius="8dp">
 
             <RelativeLayout
@@ -126,14 +126,13 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="10dp"
-                    android:drawableStart="@drawable/icon_s"
-                    android:drawableLeft="@drawable/icon_s"
-                    app:fontFamily="@font/title"
+                    android:drawableStart="@drawable/icona_s"
+                    android:drawableLeft="@drawable/icona_s"
                     android:gravity="center"
                     android:text="@string/studio"
                     android:textColor="@color/colorWhite"
                     android:textSize="20sp"
-                    />
+                    app:fontFamily="@font/title" />
 
                 <TextView
                     android:id="@+id/studio1_1"
@@ -144,10 +143,12 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
-                    app:fontFamily="@font/body"
                     android:text="@string/studio1_1"
                     android:textColor="@color/colorWhite"
-                    android:textSize="14sp"></TextView>
+                    android:textSize="14sp"
+                    app:fontFamily="@font/body">
+
+                </TextView>
 
             </RelativeLayout>
 
@@ -162,7 +163,7 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="15dp"
-            app:cardBackgroundColor="#732648"
+            app:cardBackgroundColor="#B6423D"
             app:cardCornerRadius="8dp">
 
             <RelativeLayout
@@ -176,8 +177,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="10dp"
-                    android:drawableStart="@drawable/icon_s"
-                    android:drawableLeft="@drawable/icon_s"
+                    android:drawableStart="@drawable/icona_s"
+                    android:drawableLeft="@drawable/icona_s"
                     app:fontFamily="@font/title"
                     android:gravity="center"
                     android:singleLine="true"
@@ -205,6 +206,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card4"
+            android:clickable="true"
+            android:focusable="true"
             android:layout_below="@id/card3"
             android:layout_width="387dp"
             android:layout_height="wrap_content"
@@ -212,7 +215,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="15dp"
             android:layout_marginBottom="25dp"
-            app:cardBackgroundColor="#732648"
+            app:cardBackgroundColor="#9F3A35"
             app:cardCornerRadius="8dp">
 
             <RelativeLayout
@@ -226,8 +229,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="10dp"
-                    android:drawableStart="@drawable/icon_s"
-                    android:drawableLeft="@drawable/icon_s"
+                    android:drawableStart="@drawable/icona_s"
+                    android:drawableLeft="@drawable/icona_s"
                     app:fontFamily="@font/title"
                     android:gravity="center"
                     android:singleLine="true"
@@ -250,6 +253,62 @@
                     android:textSize="14sp"></TextView>
 
             </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+        android:layout_below="@id/card4"
+            android:id="@+id/card5"
+        android:layout_width="387dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        app:cardBackgroundColor="#88322E"
+        app:cardCornerRadius="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/founders"
+            app:fontFamily="@font/title"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp">
+
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card6"
+            android:layout_width="387dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card5"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="25dp"
+            app:cardBackgroundColor="#88322E"
+            app:cardCornerRadius="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/developers"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                app:fontFamily="@font/title">
+
+            </TextView>
 
         </androidx.cardview.widget.CardView>
 
