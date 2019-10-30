@@ -85,11 +85,11 @@
 
                 <TextView
                     android:id="@+id/blanc"
-                    android:layout_width="109dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="30dp"
-                    android:gravity="center"
+                    android:layout_gravity="center"
                     android:background="@drawable/icona_clock"
-                    android:layout_gravity="center"/>
+                    android:gravity="center" />
 
                 <TextView
                     android:id="@+id/mattino"
@@ -131,7 +131,7 @@
                     android:layout_height="30dp"
                     android:layout_gravity="center_horizontal"
                     android:gravity="center"
-                    android:text="@string/closed"
+                    android:text=""
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold" />
 
@@ -162,7 +162,7 @@
                     android:layout_height="30dp"
                     android:layout_gravity="center_horizontal"
                     android:gravity="center"
-                    android:text="@string/closed"
+                    android:text=""
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold" />
 
@@ -193,7 +193,7 @@
                     android:layout_height="30dp"
                     android:layout_gravity="center_horizontal"
                     android:gravity="center"
-                    android:text="@string/closed"
+                    android:text=""
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold" />
 
@@ -224,7 +224,7 @@
                     android:layout_height="30dp"
                     android:layout_gravity="center_horizontal"
                     android:gravity="center"
-                    android:text="@string/closed"
+                    android:text=""
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold" />
 
@@ -255,7 +255,7 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
                     android:gravity="center"
-                    android:text="@string/closed"
+                    android:text=""
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold" />
 
@@ -282,11 +282,11 @@
 
                 <TextView
                     android:id="@+id/m6"
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
                     android:gravity="center"
-                    android:text="@string/closed"
+                    android:text=""
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold" />
 
@@ -318,7 +318,7 @@
                     android:layout_height="30dp"
                     android:layout_gravity="center_horizontal"
                     android:gravity="center"
-                    android:text="@string/closed"
+                    android:text=""
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold" />
 
@@ -339,6 +339,17 @@
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
             tools:targetApi="m"/>
+        <Button
+            android:id="@+id/btnrefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/TL"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_rounded_corners"
+            android:text="@string/refresh"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"/>
 
     </RelativeLayout>
 

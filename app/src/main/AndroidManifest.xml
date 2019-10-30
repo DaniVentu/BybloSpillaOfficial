@@ -26,6 +26,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Page_modifyevents"></activity>
+        <activity android:name=".Page_modifytimetable" />
         <activity
             android:name=".Page_Register"
             android:screenOrientation="locked" />

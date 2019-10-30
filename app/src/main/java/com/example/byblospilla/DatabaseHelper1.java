@@ -47,10 +47,10 @@ public class DatabaseHelper1 extends SQLiteOpenHelper {
         }
     }
 
-    Cursor getListContents(){
+    public Cursor getData(){
         SQLiteDatabase db = this.getWritableDatabase();
-        final Cursor data1 = db.rawQuery("SELECT * FROM notesuser", null);
-        return data1;
+        Cursor res = db.rawQuery("select * from "+ TABLE_NAME2 + " ORDER BY ID DESC LIMIT 5",null);
+        return res;
     }
 
 }

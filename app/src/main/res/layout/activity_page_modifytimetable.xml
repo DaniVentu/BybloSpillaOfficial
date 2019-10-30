@@ -6,13 +6,25 @@
     android:background="@drawable/sfondosfumato"
     android:padding="10dp"
     android:paddingTop="10dp">
-
+    <Button
+        android:id="@+id/retbtn"
+        style="?borderlessButtonStyle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:drawableTop="@drawable/icona_back"
+        android:drawableTint="@color/colorWhite"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        tools:targetApi="m"/>
     <TableLayout
         android:id="@+id/TL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="70dp"
         tools:ignore="UselessParent">
 
         <TableRow
@@ -274,5 +286,15 @@
         </TableRow>
 
     </TableLayout>
-
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TL"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_rounded_corners"
+        android:text="@string/save1"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="20dp"/>
 </RelativeLayout>
