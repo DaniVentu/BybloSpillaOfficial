@@ -43,7 +43,7 @@
 
             <TextView
                 android:id="@+id/mattino"
-                android:layout_width="289dp"
+                android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:fontFamily="@font/title"
                 android:layout_gravity="center"
@@ -75,7 +75,7 @@
                 />
             <EditText
                 android:id="@+id/m11"
-                android:layout_width="144dp"
+                android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:gravity="center"
                 android:importantForAutofill="no"
@@ -108,7 +108,7 @@
 
             <EditText
                 android:id="@+id/m22"
-                android:layout_width="144dp"
+                android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:gravity="center"
                 android:importantForAutofill="no"
@@ -141,7 +141,7 @@
 
             <EditText
                 android:id="@+id/m33"
-                android:layout_width="144dp"
+                android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:gravity="center"
                 android:importantForAutofill="no"
@@ -174,7 +174,7 @@
 
             <EditText
                 android:id="@+id/m44"
-                android:layout_width="144dp"
+                android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:gravity="center"
                 android:importantForAutofill="no"
@@ -207,7 +207,7 @@
 
             <EditText
                 android:id="@+id/m55"
-                android:layout_width="144dp"
+                android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:gravity="center"
                 android:importantForAutofill="no"
@@ -240,7 +240,7 @@
 
             <EditText
                 android:id="@+id/m66"
-                android:layout_width="144dp"
+                android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:gravity="center"
                 android:importantForAutofill="no"
@@ -271,7 +271,7 @@
 
             <EditText
                 android:id="@+id/m77"
-                android:layout_width="144dp"
+                android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:gravity="center"
                 android:importantForAutofill="no"
