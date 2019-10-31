@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+//PAGINA MANAGERIALE IN CUI SI PUò TROVARE TIMETABLE, NOTES, ROOMS E PROMO
 public class Page1 extends AppCompatActivity {
 
     @Override
@@ -44,7 +44,7 @@ public class Page1 extends AppCompatActivity {
                 startActivity(openbtn_timetable);
             }
         });
-
+        //bottone per l'apertura di una dialog senza interazioni dove è possibile vedere le promozioni attive
         Button IShowDialog = findViewById(R.id.credits);
         IShowDialog.setOnClickListener(new View.OnClickListener() {
 
@@ -64,7 +64,7 @@ public class Page1 extends AppCompatActivity {
 
 
 
-        /* return */
+        /* return button alla Page MAINACTIVITY*/
         Button btnret = findViewById(R.id.retbtn);
         final Intent openret = new Intent(Page1.this, MainActivity.class);
         btnret.setOnClickListener(new View.OnClickListener() {

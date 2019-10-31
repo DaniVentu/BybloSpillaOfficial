@@ -8,7 +8,8 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
+//PAGINA CHE CONTIENE I COLLEGAMENTI A GOOGLE MAPS, INSTAGRAM,
+// INFO E INGRESSO NELLA SEZIONE MANAGERIALE DELLE AULE STUDIO
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -51,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
     /*qui posso scrivere gli altri metodi fuori dal metodo principale!*/
 
-
+    //collegamento diretto alla pagina Instagram della BYBLOS, aula studio su cui è basata l'applicazione
     public void instagram_link(View view) {
         Intent instagramIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://instagram.com/aulastudiobyblos?igshid=mp7ipsmcjxz8"));
         startActivity(instagramIntent);
