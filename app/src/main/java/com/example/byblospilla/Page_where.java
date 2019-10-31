@@ -1,21 +1,16 @@
 package com.example.byblospilla;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+
+import androidx.fragment.app.FragmentActivity;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentActivity;
 
 public class Page_where extends FragmentActivity implements OnMapReadyCallback {
 
@@ -31,18 +26,8 @@ public class Page_where extends FragmentActivity implements OnMapReadyCallback {
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        /* return button*/
-        /* Button btnret = findViewById(R.id.retbtn);
-        final Intent openret = new Intent(Page_where.this, Page1.class);
-        btnret.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(openret);
-            }
-
-        }); */
     }
-
+    //motodo per la visualizzazione della posizione esatta delle aule studio byblos
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;

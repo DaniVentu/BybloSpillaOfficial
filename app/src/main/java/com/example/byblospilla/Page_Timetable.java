@@ -52,7 +52,7 @@ public class Page_Timetable extends AppCompatActivity {
             }
         });
 
-        /*button dialog*/
+        /*button dialog per l'apertura della dialog di immissione codice admin*/
 
         Button mShowDialog = findViewById(R.id.btnShowDialog);
 
@@ -95,8 +95,7 @@ public class Page_Timetable extends AppCompatActivity {
                 });
             }
         });
-
-        //viewLast();
+        //mostra messaggio se non è ancora stato inserito un timetable valido
         Cursor res = db.getData();
         if(res.getCount() == 0){
             showMessage("TIMETABLE","BENVENUTO NELLA SEZIONE TIMETABLE! Qui tramite un codice di accesso ADMIN puoi modificare l'orario settimanale delle aule studio BYBLOS" );
@@ -131,7 +130,7 @@ public class Page_Timetable extends AppCompatActivity {
 
     }
 
-
+    //motodo per mostrare messaggio a video
     private void showMessage(String title, String message){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(true);

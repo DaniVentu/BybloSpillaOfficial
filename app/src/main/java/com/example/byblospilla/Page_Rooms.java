@@ -1,13 +1,10 @@
 package com.example.byblospilla;
 
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.pdf.PdfDocument;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -48,7 +45,7 @@ public class Page_Rooms extends AppCompatActivity {
             }
         });
 
-
+        /*Button di ritorno*/
         Button btnret = findViewById(R.id.retbtn);
         final Intent openret = new Intent(Page_Rooms.this, Page1.class);
         btnret.setOnClickListener(new View.OnClickListener() {

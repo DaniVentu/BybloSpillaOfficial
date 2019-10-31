@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
+//PAGINA DEDICATA ALLA REGISTRAZIONE DELL'UTENTE
 public class Page_Register extends AppCompatActivity {
     DatabaseHelper db;
     EditText mTextUsername;
@@ -30,6 +30,7 @@ public class Page_Register extends AppCompatActivity {
         mTextCnfPassword = findViewById(R.id.edittext_cnf_password);
         mButtonRegister = findViewById(R.id.button_register);
         mTextViewLogin = findViewById(R.id.textview_login);
+        //textview che riporta l'utente alla schermata di login
         mTextViewLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -44,8 +45,8 @@ public class Page_Register extends AppCompatActivity {
                 String user = mTextUsername.getText().toString().trim();
                 String pwd = mTextPassword.getText().toString().trim();
                 String cnf_pwd = mTextCnfPassword.getText().toString().trim();
-
-                if(pwd.equals(cnf_pwd)){
+                //controllo sulla registrazione dell'utente
+                if(pwd.equals(cnf_pwd) && !user.isEmpty() && !pwd.isEmpty()){
                     long val = db.addUser(user,pwd);
                     if(val > 0){
                         Toast.makeText(Page_Register.this,"Success!",Toast.LENGTH_SHORT).show();

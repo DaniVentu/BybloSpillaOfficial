@@ -26,11 +26,6 @@ public class Page_Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page__login);
 
-        /* Dialog dialog = new Dialog(this,android.R.style.Theme_Translucent_NoTitleBar);
-
-        View v = this.getLayoutInflater().inflate(R.layout.progressbar,null);
-        dialog.setContentView(v);
-        dialog.show(); */
 
         db = new DatabaseHelper(this);
         mTextUsername = (EditText)findViewById(R.id.edittext_username);
@@ -38,6 +33,7 @@ public class Page_Login extends AppCompatActivity {
         mButtonLogin = (Button)findViewById(R.id.button_login);
         mTextViewRegister = (TextView)findViewById(R.id.textview_register);
 
+        //accesso all'activity Page_Register tramite textview clickable
         mTextViewRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,7 +41,7 @@ public class Page_Login extends AppCompatActivity {
                 startActivity(registerIntent);
             }
         });
-
+        //bottone di login
         mButtonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

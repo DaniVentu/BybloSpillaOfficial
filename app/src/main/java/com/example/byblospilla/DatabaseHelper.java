@@ -43,7 +43,8 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         db.close();
         return  res;
     }
-    //
+
+
     public boolean checkUser(String username, String password){
         String[] columns = { COL_1 };
         SQLiteDatabase db = getReadableDatabase();

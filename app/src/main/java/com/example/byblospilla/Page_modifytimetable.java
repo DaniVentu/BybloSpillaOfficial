@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+//CLASSE PER LA MODIFICA DELLA TABELLA ORARI
 public class Page_modifytimetable extends AppCompatActivity {
 
     DatabaseHelper2 db;
@@ -36,9 +36,8 @@ public class Page_modifytimetable extends AppCompatActivity {
         editTextm66 = findViewById(R.id.m66);
         editTextm77 = findViewById(R.id.m77);
         db = new DatabaseHelper2(this);
-
+        //bottone per il salvataggio dei dati inseriti
         btnsave = findViewById(R.id.btnsave);
-
         btnsave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -86,9 +85,10 @@ public class Page_modifytimetable extends AppCompatActivity {
                 editTextm66.setText("");
                 editTextm77.setText("");
 
+                //richiama metodo data per inserimento dei dati nel database
                 AddData(m11,m22,m33,m44,m55,m66,m77);
 
-
+                //a fine inserimento torna nella schermata timetable
                 final Intent retback = new Intent(Page_modifytimetable.this,Page_Timetable.class);
                 startActivity(retback);
 
@@ -106,6 +106,7 @@ public class Page_modifytimetable extends AppCompatActivity {
         });
     }
 
+    //motodo per inserimento dati nella tabella del relativo database
     public void AddData(String m11,String m22,String m33,String m44,String m55,String m66,String m77){
         boolean insertData = db.addTime(m11,m22,m33,m44,m55,m66,m77);
         if(insertData)
@@ -113,7 +114,7 @@ public class Page_modifytimetable extends AppCompatActivity {
         else
             ToasMessage("Data not inserted!");
     }
-
+    //metodo per il toast di messaggi a video
     private void ToasMessage(String message){
         Toast.makeText(this,message,Toast.LENGTH_SHORT).show();
     }

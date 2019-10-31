@@ -132,7 +132,7 @@ public class Page_Events extends AppCompatActivity {
 
 
     }
-    //motodo creato per la visualizzazione di un messaggio dialog cancellabile 
+    //motodo creato per la visualizzazione di un messaggio dialog cancellabile
     private void showMessage(String title, String message){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(true);
